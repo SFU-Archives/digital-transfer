@@ -11,7 +11,7 @@ This site provides documentation relating to the transfer of digital materials t
 
 The [transfer scenarios page](transfer-scenarios.md) identifies various possible scenarios and the transfer methods appropriate to them.
 
-The Archives' standard transfer method uses SFU MoveIt (for packaging) and SFU Vault (for deposit). Procedures are described separately for producers sending the materials (i.e. [SFU departmental staff and private donors](procedures/standard-producers/01-introduction.md)) and for [Archives staff]((procedures/standard-archives/01-introduction.md)) receiving the materials. For email transfers, see the separate [email archiving guidelines](https://github.com/SFU-Archives/email-archiving) on this GitHub site.
+The Archives' **standard transfer method** uses SFU MoveIt (for packaging) and SFU Vault (for deposit). [The workflow diagram can be downloaded here](../../downloads/DigitalTransferWorkflow.pdf) (pdf). There are separate procedures for producers who sending the materials (i.e. [SFU departmental staff and private donors](procedures/standard-producers/01-introduction.md)); and for [Archives staff]((procedures/standard-archives/01-introduction.md)) who are receiving them. For email transfers, see the separate [email archiving guidelines](https://github.com/SFU-Archives/email-archiving) elsewhere on this GitHub site.
 
 ###### Last updated: Nov 16, 2020
 
