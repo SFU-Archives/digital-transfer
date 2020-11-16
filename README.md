@@ -4,16 +4,13 @@ This site provides documentation relating to the transfer of digital materials t
 
 **Contents**
 
-[Transfer scenarios](transfer-scenarios.md)
-
+### [Transfer scenarios](transfer-scenarios.md)
 An outline of various transfer scenarios and the transfer methods appropriate to them.
 
-[Standard transfer method: procedures for producers](procedures/standard-producers/01-introduction.md)
-
+### [Standard transfer method: procedures for producers](procedures/standard-producers/01-introduction.md)
 Procedures for SFU departmental staff and private donors for the Archives' standard transfer method using SFU MoveIt and a deposit folder on SFU Vault.
 
-[Standard transfer method: procedures for Archives](procedures/standard-archives/01-introduction.md)
-
+### [Standard transfer method: procedures for Archives](procedures/standard-archives/01-introduction.md)
 The same method as above from the standpoint of SFU Archives staff.
 
 For email transfers, see the separate [email archiving guidelines](https://github.com/SFU-Archives/email-archiving) on this GitHub site.
