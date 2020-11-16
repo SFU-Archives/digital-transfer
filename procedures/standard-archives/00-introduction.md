@@ -1,7 +1,8 @@
-###### [Digital transfer](../../README.md) > [Procedures](../procedures-home.md)
+###### [Digital Transfer](../../README.md) > [Procedures](../procedures-home.md) > Standard Method: Procedures for Archives
+###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation](03-validation.md) `|` [4. Ingest](04-ingest.md) `|` [5. Completion](05-completion.md)
 
 # Standard Transfer Method: Procedures for Archives
-See [Worflow diagram below](#workflow)
+![Workflow diagram](../../screenshots/digital-transfer-workflow.png)
 
 [1. Pre-Transfer](01-pre-transfer.md)
 - Create a transfer account
@@ -31,8 +32,5 @@ See [Worflow diagram below](#workflow)
 - Generate Transfer Completed Notice
 
 Validation checklist
-
-## Workflow
-![Workflow diagram](../../screenshots/digital-transfer-workflow.png)
 
 ###### Last updated: Nov 16, 2020
