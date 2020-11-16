@@ -5,9 +5,9 @@ This site provides documentation relating to the transfer of digital materials t
 **Contents**
 - [Transfer scenarios](transfer-scenarios.md)
 
-- [Standard transfer method: procedures for departmental staff and donors](procedures/standard-producers/01-introduction.md)
+- [Standard transfer method: procedures for departmental staff and donors](procedures/standard-producers/00-introduction.md)
 
-- [Standard transfer method: procedures for Archives](procedures/standard-archives/01-introduction.md)
+- [Standard transfer method: procedures for Archives](procedures/standard-archives/00-introduction.md)
 
 The [transfer scenarios page](transfer-scenarios.md) identifies various possible scenarios and the transfer methods appropriate to them.
 
