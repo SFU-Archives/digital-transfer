@@ -2,21 +2,21 @@
 ###### Status: under development
 This site provides documentation relating to the transfer of digital materials to SFU Archives. It is a work in progress and will be updated as new sections are added.
 
-**Guide**
-- [Transfer scenarios](transfer-scenarios.md)
+## Guide
+[Transfer scenarios](transfer-scenarios.md)
 
-**Procedures**
-- Standard transfer method (SFU MoveIt)
-  - [Procedures for departmental staff and donors](procedures/standard-producers/00-introduction.md)
-  - [Procedures for Archives](procedures/standard-archives/00-introduction.md)
+## Procedures
+Standard transfer method (SFU MoveIt)
+- [Procedures for departmental staff and donors](procedures/standard-producers/00-introduction.md)
+- [Procedures for Archives](procedures/standard-archives/00-introduction.md)
 
-**Downloads**
-- Checklists:
-  - [Digital transfer checklist (for producers)](downloads/checklist-transfer.pdf)
-  - [Digital transfer validation checklist (for Archives)](downloads/checklist-validation.pdf)
+## Downloads
+Checklists
+- [Digital transfer checklist (for producers)](downloads/checklist-transfer.pdf)
+- [Digital transfer validation checklist (for Archives)](downloads/checklist-validation.pdf)
 
-- Workflow diagrams:
-  - [Standard transfer workflow](downloads/workflow-standard.pdf)
+Workflow diagrams
+- [Standard transfer workflow](downloads/workflow-standard.pdf)
 
 For email transfers, see the separate [email archiving guidelines](https://github.com/SFU-Archives/email-archiving) elsewhere on this GitHub site.
 
