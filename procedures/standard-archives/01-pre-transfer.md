@@ -3,23 +3,23 @@
 
 # 1. Pre-Transfer
 ###### Status: draft
-<img align="right" width="350" src="../../screenshots/pre-transfer.png">
+<img align="right" width="350" src="../../screenshots/01-pre-transfer.png">
 
-The pre-transfer phase is typically triggered by the first request from a producer (SFU departmental staff or a private donor) to send digital materials to the Archives. [Determine whether or not to accept the request](#accept-or-reject-a-request-to-transfer). If accepted, [create a deposit folder](#create-a-deposit-folder) on SFU Vault. If the producer will be regularly sending new transfers in the future, you should create a [Digital Transfer Account](#create-a-digital-transfer-account) for the person. Once individuals have accounts, they do not need to request permission for subsequent transfers, and the transfer process more resembles a self-deposit system.
+The pre-transfer phase is typically triggered by the first request from a producer (SFU departmental staff or a private donor) to send digital materials to the Archives. [Determine whether or not to accept the request](#11-accept-or-reject-a-request-to-transfer). If accepted, [create a deposit folder](#12-create-a-deposit-folder) on SFU Vault. If the producer will be regularly sending new transfers in the future, you should create a [Digital Transfer Account](#13-create-a-digital-transfer-account) for the person. Once individuals have accounts, they do not need to request permission for subsequent transfers, and the transfer process more resembles a self-deposit system.
 
-## Contents
-- [Accept or reject a request to transfer](#accept-or-a-reject-request-to-transfer)
+## Steps
+- [1.1 Accept or reject a request to transfer](#11-accept-or-a-reject-request-to-transfer)
   - [University records](#university-records)
   - [Private records](#private-records)
   - [Checklist](#checklist)
-- [Create a deposit folder](#create-a-deposit-folder)
+- [1.2 Create a deposit folder](#12-create-a-deposit-folder)
   - [Guidelines](#guidelines)
   - [Shares](#shares)
-- [Create a Digital Transfer Account](#create-a-digital-transfer-account)
+- [1.3 Create a Digital Transfer Account](#13-create-a-digital-transfer-account)
   - [Who should have an account?](#who-should-have-an-account)
   - [Account creation](#account-creation)
 
-## Accept or reject a request to transfer
+## 1.1 Accept or reject a request to transfer
 ### University records
 Any university department or body can transfer digital records to the Archives. But the following conditions should be met before accepting a proposed transfer:
 
@@ -33,9 +33,9 @@ Any university department or body can transfer digital records to the Archives. 
 
 Exceptions are possible. Use your judgement and seek clarifications from the contact as required.
 
-It is fairly common for departments to wish to transfer digital records to the Archives before their total retention period has expired. Often the applicable RRSDA was originally designed for paper records, with provision for off-site storage in the University Records Centre during the semi-active period. **There is currently no equivalent semi-active off-site storage for electronic records. All digital transfers are archival.**
+It is fairly common for departments to wish to transfer digital records to the Archives before their total retention period has expired. Often the applicable RRSDA was originally designed for paper records, with provision for off-site storage in the University Records Centre during the semi-active period. **There is currently no equivalent semi-active off-site storage for electronic records. All digital transfers are "archival", i.e. the records pass to the control of the Archives.**
 
-Accepting early transfer is fine, but you should make the contact aware that following transfer the records will no longer "belong to" the department and now come under the custody and control of the Archives.
+Accepting early transfer is fine, but you should make clear to the contact that following transfer the records will no longer "belong to" the department and will now come under the custody and control of the Archives.
 
 ### Private records
 Individual donors or non-SFU organizations should only transfer records when they have a Donation Agreement with the Archives or are in the process of negotiating one.
@@ -51,8 +51,8 @@ It is common and acceptable for donors to send materials before the Donation Agr
 ### Checklist
 See the [Transfer Validation Checklist](#../../downloads/checklist-validation.pdf) for more on the validation process.
 
-## Create a deposit folder
-<img align="right" width="400" src="../../screenshots/deposit-folder.png">
+## 1.2 Create a deposit folder
+<img align="right" width="400" src="../../screenshots/01-deposit-folder.png">
 Under the standard transfer method, the producer will upload their transfer to a deposit folder on SFU Vault, the university's file-sharing and storage service. **Deposit folders should only be created on the Vault space associated with the Archives' `moveit@sfu.ca` email account.**
 
 ### Guidelines
@@ -62,14 +62,14 @@ Use the following naming convention when creating deposit folders: `Deposit_Fond
 
 - Prefer department or organization names over personal names when creating the folders; but for personal fonds, it is fine to use the creator's name.
 
-- The rationale for the `Deposit_` prefix is to make it easier for depositors to understand the purpose of the folder; if the folder is shared with depositors who have SFU accounts and have installed the SFU Vault desktop app, the `Depost_` folder will be directly accessible on their computers via Finder (Mac) or File Explorer (Windows).
+- The rationale for the `Deposit_` prefix is to make it easier for depositors to understand the purpose of the folder; if the folder is shared with depositors who have SFU accounts and have installed the SFU Vault desktop app, the `Deposit_` folder will be directly accessible on their computers via Finder (Mac) or File Explorer (Windows).
 
 ### Shares
 To provide the producer with access to the deposit folder, you can either (i) create a share on the folder itself; or (ii) share just a link to the folder.
 
 - See [SFU Vault documentation](https://www.sfu.ca/itservices/collaboration/sfu-vault/faq-section/files-and-sharing/) for how to share folders by either method.
 
-- You can only share the folder itself (method i) with someone who has an SFU email account; for non-SFU donors, just share the link (method ii).
+- You can only share the folder itself (method i) with someone who has an SFU email account. For non-SFU donors, share the link (method ii); it is possible to set and require a password when sharing the link.
 
 - When you share the folder (method i) with an SFU community member and that person has installed the desktop version of SFU Vault, they will be able to view and interact with the deposit folder directly on their computer via Finder (Mac) or File Explorer (Windows).
 
@@ -79,8 +79,8 @@ To provide the producer with access to the deposit folder, you can either (i) cr
 
 - For more on accessing the deposit folder from the depositor's point of view, see the [procedures for producers, section 2. Transfer](../standard-producers/02-transfer.md).
 
-## Create a Digital Transfer Account
-<img align="right" width="350" src="../../screenshots/digital-transfer-account.png">
+## 1.3 Create a Digital Transfer Account
+<img align="right" width="400" src="../../screenshots/01-digital-transfer-account.png">
 For one-off transfers, the deposit folder can be deleted or the share removed after the transfer has been completed. But if the same person will be making additional transfers in the future, you can leave the deposit folder and its share in place and create a Digital Transfer Account for the person.
 
 ### Who should have an account?
@@ -98,5 +98,5 @@ To create an account:
 
 - For more information on data entry and management of account record in the AIS database, see the separate section on this GitHub site for AIS documentation (forthcoming).
 
-###### Last updated: Nov 17, 2020
-###### < [Previous: Introduction](00-introduction.md) `|` [Next: 2. Transfer](02-transfer.md)
+###### Last updated: Nov 18, 2020
+###### [< Previous: Introduction](00-introduction.md) `|` [Next: 2. Transfer >](02-transfer.md)

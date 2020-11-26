@@ -1,4 +1,4 @@
-###### [Digital transfer](./README.md)
+###### [Digital transfer](../README.md)
 
 # Transfer Scenarios
 ###### Status: under development
