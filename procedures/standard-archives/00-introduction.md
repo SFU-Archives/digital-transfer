@@ -3,9 +3,7 @@
 
 # Standard Transfer Method: Procedures for Archives
 ###### Status: under development
-The standard digital transfer method involves the use of SFU MoveIt to create transfer packages; SFU Vault for deposit; Bagger or SFU ProveIt for validation; the AIS database for accessioning; and Archivematica for ingest.
-
-These procedures describe the process from the point of view of Archives' staff. In the workflow diagram below, actions and decision points by Archives are shaded blue.
+SFU Archives' standard method for digital transfer supports the creation and deposit of standardized transfer packages. These procedures describe the process from the point of view of Archives' staff. In the workflow diagram below, actions and decision points by Archives are shaded blue.
 
 For the same process from the producer's point of view, see [Standard Transfer Method: Procedures for SFU Staff and Private Donors](../standard-producers/00-introduction.md).
 

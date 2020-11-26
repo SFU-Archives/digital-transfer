@@ -25,6 +25,7 @@ Before you start:
 - Unzip the package.
 - Create a project folder on your desktop for the various reports that will be created.
 
+<br clear="all">
 ## 3.1 Scan for viruses
 <img align="right" width="400" src="../../screenshots/03-clam-av.png">
 Use [ClamAV](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/clamav.md) to check the transfer package for viruses and other malware. Run ClamAV via the command line in Terminal.
