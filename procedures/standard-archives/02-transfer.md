@@ -10,8 +10,7 @@ The main activities in the **transfer** phase belong to the producer, who packag
 ## Steps
 - [2.1 Receive notice of a deposit](#21-receive-notice-of-a-deposit)
 - [2.2 Create an Accession record](#22-create-an-accession-record)
-- [2.5 Move transfer package](#23-move-transfer-package)
-- [2.4 Download a copy of the transfer package](#24-download-a-copy-of-the-transfer-package)
+- [2.3 Download the transfer package](#23-download-the-transfer-package)
 
 ## 2.1 Receive notice of a deposit
 Deposit folders on SFU Vault account are configured to send activity notification emails to the `moveit` email account.
@@ -31,8 +30,7 @@ For instructions, see SFU Mail documentation on [adding shares](https://www.sfu.
 Create an AIS Accession record for the transfer, if one does not already exist.
 - Multiple transfer packages can be assigned to the same accession if they belong to the same transfer project.
 - E.g. the person has broken up the transfer into several transfer packages deposited over several days or weeks.
-
-The rationale for creating the Accession record at this early stage is to have a ID that can be used to organize the `Transfers_InProgress` folder in the next step.
+- Even if the transfer is eventually rejected during the [validation stage](03-validation.md), the Accession record provides a place to document the validation decision.
 
 To create an Accession record:
 - Open the AIS `Archives module`.
@@ -43,19 +41,9 @@ To create an Accession record:
 - `Transfer of control (legal)` = date Donation Agreement signed (private records); leave blank if unknown; leave blank for university records.
 - Click the `Register` button to create a new record and obtain the a new `Accession number` (in the form YYYY-NNN).
 
-## 2.3 Move the transfer package to the In Progress folder
-If it does not already exist, create a folder for the Accession in the `Transfers_InProgress` folder and move the transfer package here.
-- Use the `Accession number` you obtained in [step 2.2](2-2-create-an-accession-record) above.
-- Use the naming convention `ACNYYYY-NNN_CreatorName` for the Accession folder.
-- E.g. `ACN2020-045_AdBusters`
+## 2.3 Download the transfer package
+Download a copy of the transfer package from SFU Vault to your desktop for validation and analysis.
+- It is possible to open and inspect the contents on SFU Vault, but the various software tools used in the [Validation phase](03-validation.md) cannot be run on Vault.
 
-The rationale for this step is to:
-- Ensure that the transfer package does not get lost or forgotten among the deposit folders.
-- Ensure that producers will not revise their transfers after deposit (producers do not have access to the `Transfers_InProgress` folder).
-
-## 2.4 Download a copy of the transfer package
-Download a copy to your desktop for validation and analysis.
-- It is possible to open and inspect the contents on SFU Vault, but you cannot run on Vault the various software tools needed in the [Validation phase](03-validation.md).
-
-###### Last updated: Nov 23, 2020
+###### Last updated: Jan 6, 2021
 ###### [< Previous: Pre-Transfer](01-pre-transfer.md) `|` [Next: 3. Validation](03-validation.md)
