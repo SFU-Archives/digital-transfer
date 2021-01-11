@@ -20,21 +20,20 @@ For the same process from the producer's point of view, see [Standard Transfer M
 - [2.3 Download a copy of the transfer package](02-transfer.md#23-download-the-transfer-package)
 
 [3. Validation](03-validation.md)
-- 3.1 Scan for viruses (ClamAV)
-- 3.2 Validate bag (Bagger)
-- 3.3 Document directory structure (Tree)
-- 3.4 Analyze files (Brunnhilde)
-- 3.5 Create analysis reports (FileAnalysis utility)
-- 3.6 Accept or reject the transfer
-- 3.7 Edit / save the transfer package
-- 3.8 Update the Accession record (AIS)
+- [3.1 Scan for viruses](#31-scan-for-viruses)
+- [3.2 Validate bag](#32-validate-bag)
+- [3.3 Document directory structure](#33-document-directory-structure)
+- [3.4 Analyze files](#34-analyze-files)
+- [3.5 Create analysis reports](#35-create-analysis-reports)
+- [3.6 Accept or reject the transfer](#36-accept-or-reject-the-transfer)
+- [3.7 Edit / save the transfer package](#37-edit-save-the-transfer-package)
 - [Transfer Validation Checklist](../../downloads/checklist-validation.pdf)
 
 [4. Ingest](04-ingest.md)
 - 4.1 Upload transfer package to staging server
-- 4.2 Ingest transfer package to Archivematica backlog
-- 4.3 Create an AIP record (AIS)
-- 4.4 Update the Accession record (AIS)
+- 4.2 Ingest to Archivematica backlog
+- 4.3 Import Bag data to AIS Accession record
+- 4.4 Output AIS forms and notices
 
 [5. Completion](05-completion.md)
 - 5.1 Generate and send the Transfer Completed Notice

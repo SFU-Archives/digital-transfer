@@ -2,7 +2,7 @@
 ###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` 3. Validation `|` [4. Ingest](04-ingest.md) `|` [5. Completion](05-completion.md)
 
 # 3. Validation
-###### Status: under development
+###### Status: draft
 <img align="right" width="350" src="../../screenshots/03-validation.png">
 
 Validation is the process of deciding whether or not to accept a transfer into the repository. It verifies that the transfer package complies with the BagIt specification, that no data was lost or corrupted during transmission, and that transfer contents meet expectations and are suitable for long-term preservation.
@@ -17,7 +17,6 @@ The analysis undertaken during validation also provides descriptive data that sh
 - [3.5 Create analysis reports](#35-create-analysis-reports)
 - [3.6 Accept or reject the transfer](#36-accept-or-reject-the-transfer)
 - [3.7 Edit / save the transfer package](#37-edit-save-the-transfer-package)
-- [3.8 Update the Accession record](#38-update-the-accession-record)
 - [Transfer Validation Checklist](../../downloads/checklist-validation.pdf)
 
 This phase begins after you have downloaded the transfer package to your desktop ([step 2.3](02-transfer.md#23-download-the-transfer-package)).
@@ -29,7 +28,7 @@ Before you start:
 <br clear="all"/>
 
 ## 3.1 Scan for viruses
-<img align="right" width="400" src="../../screenshots/03-clam-av.png">
+<img align="right" width="350" src="../../screenshots/03-clam-av.png">
 
 Use [ClamAV](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/clamav.md) to check the transfer package for viruses and other malware.
 
@@ -52,7 +51,7 @@ For more information about ClamAV (installation and use), see: [Digital Reposito
 <br clear="all"/>
 
 ## 3.2 Validate bag
-<img align="right" width="400" src="../../screenshots/03-bagger.png">
+<img align="right" width="350" src="../../screenshots/03-bagger.png">
 
 Use Bagger to verify that the transfer package is a properly formed "bag" (complies with the BagIt specification) and that no data was lost or corrupted during deposit (the files' pre- and post-transfer checksums match).
 
@@ -83,7 +82,7 @@ For more information about Bagger (installation and use), see: Digital Repositor
 
 Use [Tree](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/tree.md) to capture the original directory structure of the transfer as a text representation. This provides a handy overview of the transfer and supports later appraisal, arrangement, and description.
 
-Run Tree via the command line in Terminal: `$ tree -d -o <<file_path_for_output_report>> <<path_to_target_folder>>`
+Run Tree via command line in Terminal: `$ tree -d -o <<file_path_for_output_report>> <<path_to_target_folder>>`
 - The `-d` flag means Tree will list only directories; omit to show all contents down to the file level if desired.
 - The `-o` flag = output a text report to the specified location (include the file name with `.txt` extenion, e.g. `tree.txt`).
 
@@ -104,7 +103,7 @@ In Brunnhilde:
 - Make sure you **do not** run a virus scan (already done with ClamAV in [step 3.1 above](#31-scan-for-viruses)) – uncheck these boxes on the `Options` tab.
 - On the `Directory` tab, click the `Browse` button to select the transfer package as the `Source` – make sure the transfer package has been unzipped.
 - Specify a project folder (e.g. on your deskotp) as the `Destination` for Brunnhilde output reports.
-- Enter the `Accession number` (created in step 2.x), e.g. `ACN2021-100`; Brunnhilde will use this as the name of the folder for the output reports.
+- Enter the `Accession number` (created in step 2.x), e.g. `ACN-2021-100`; Brunnhilde will use this as the name of the folder for the output reports.
 - Click the `Start scan` button: the `Status` field will show scan in progress.
 - Depending on the size of the transfer, it may take several minutes to complete.
 
@@ -143,11 +142,10 @@ For more detailed documentation and guidance on use, see: Digital Repository Uti
 <br clear="all"/>
 
 ## 3.6 Accept or reject the transfer
-<img align="right" width="200" src="../../screenshots/03-validation-checklist.png">
+<img align="right" width="300" src="../../screenshots/03-validation-checklist.png">
 
 Use the [Validation checklist](../../downloads/checklist-validation.pdf) with the information you have gathered to determine whether or not to accept the transfer for ingest.
-
-The [Validation checklist](../../downloads/checklist-validation.pdf) identifies various tests to apply to the transfer, and it suggests the actions you should take in the event of a fail.
+- The checklist applies various tests to the transfer and suggests the actions you should take in the event of a fail.
 - Not all (in fact very few) "fails" require you to outright reject a transfer, but they point to issues that may need further analysis or follow-up for clarification with the producer.
 
 <br clear="all"/>
@@ -168,19 +166,15 @@ To add metadata:
 
 Click the `Save Bag As` button to save the transfer package as a new Bag.
 - In the dialog box, click the `Browse` button next to the `Save as` field to specify a new location and enter the new package name.
-- Use the following naming convention: `ACN-YYYY-NNN_Creator_Descriptor`; e.g. `ACN-2021-100_SFUGeography_CommitteeFiles`.
+- Use the following naming convention: `ACNYYYY-NNN_Creator_Descriptor`; e.g. `ACN2021-100_SFUGeography_CommitteeFiles`.
 - Leave the `Holey bag` box unchecked.
+- Set `Serial type` to "none".
 - Check both `Generate ... manifest` boxes and use "SHA256" as the `manifest algorithm`.
 - Click the `OK` button.
 
-## 3.8 Update the Accession record
-<img align="right" width="400" src="../../screenshots/03-update-accession.png">
+This new Bag is now the **validated transfer package** that you will upload to Archivematica in [phase 4, Ingest](04-ingest.md).
 
-Update the AIS Accession record by importing the `bag-info.txt` file from the edited transfer packaged into the AIS.
-- This will populate the Accession record with the metadata in the Bag.
+<br clear="all"/>
 
-In the AIS, navigate to the Accession record.
-
-
-###### Last updated: Jan 7, 2021
-###### [< Previous: Transfer](02-transfer.md) `|` [Next: 4. Ingest](04-ingest.md)
+###### Last updated: Jan 11, 2021
+###### [< Previous: Transfer](02-transfer.md) `|` [Next: 4. Ingest >](04-ingest.md)

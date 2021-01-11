@@ -25,25 +25,23 @@ Email notices go only to the generic `moveit` account. For individual staff to r
 For instructions, see SFU Mail documentation on [adding shares](https://www.sfu.ca/sfumail/using-sfu-mail/sharing/sharing-mail-folders.html) and [creating redirect rules](https://www.sfu.ca/sfumail/using-sfu-mail/mail/managing-mail/forward-mail-to-another-account.html).
 
 ## 2.2 Create an Accession record
-<img align="right" width="350" src="../../screenshots/02-create-accession.png">
+<img align="right" width="400" src="../../screenshots/02-create-accession.png">
 
-Create an AIS Accession record for the transfer, if one does not already exist.
-- Multiple transfer packages can be assigned to the same accession if they belong to the same transfer project.
-- E.g. the person has broken up the transfer into several transfer packages deposited over several days or weeks.
-- Even if the transfer is eventually rejected during the [validation stage](03-validation.md), the Accession record provides a place to document the validation decision.
+Generate an AIS `Accession number` for the transfer.
+- Each deposit should be registered as a separate accession.
+- Even if the transfer is eventually rejected during [validation](03-validation.md), the Accession record provides a place to document the decision.
 
-To create an Accession record:
+To generate a new Accession number:
 - Open the AIS `Archives module`.
-- Go to the `Home` > `Accessions` tab.
-- Click the `+ New accession` button.
-- Enter / select the `Fonds number` and `Creator ID`.
-- `Transfer of custody (physical)` = date of deposit.
-- `Transfer of control (legal)` = date Donation Agreement signed (private records); leave blank if unknown; leave blank for university records.
-- Click the `Register` button to create a new record and obtain the a new `Accession number` (in the form YYYY-NNN).
+- Go to the `Home` > `Accessions` > `Actions` tab.
+- Click the `Get new accession number` link.
+- The AIS creates a new accession, assigns it the next available number, gives it the provisional title "SFU MoveIt transfer", and copies the accession number to your clipboard.
+
+Make a note of the Accession number, as you will need it later during [step 3, Validation](03-validation.md).
 
 ## 2.3 Download the transfer package
 Download a copy of the transfer package from SFU Vault to your desktop for validation and analysis.
-- It is possible to open and inspect the contents on SFU Vault, but the various software tools used in the [Validation phase](03-validation.md) cannot be run on Vault.
+- It is possible to open and inspect the contents on SFU Vault, but the various software tools used in the [Validation phase](03-validation.md) cannot be run on the deposit Vault space.
 
-###### Last updated: Jan 6, 2021
-###### [< Previous: Pre-Transfer](01-pre-transfer.md) `|` [Next: 3. Validation](03-validation.md)
+###### Last updated: Jan 8, 2021
+###### [< Previous: Pre-Transfer](01-pre-transfer.md) `|` [Next: 3. Validation >](03-validation.md)
