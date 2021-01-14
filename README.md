@@ -1,26 +1,25 @@
 # Digital Transfer
-###### Status: in progress
-SFU departments and private donors can transfer their digital archival records to SFU Archives. This site documents workflows and processes. It is a work in progress and will be updated as new material is added.
+This site provides documentation for digital transfer at SFU Archives. The [Procedures section](#procedures) includes step-by-step instructions, with separate point-of-view procedures for producers ([SFU departmental staff and private donors](procedures/standard-producers/00-introduction.md)) and [archivists](procedures/standard-archivists/00-introduction.md). The [Guide section](#guide) contains more general discussions of the Archives' approach to digital transfer. For **email transfer**, see the separate [email archiving guidelines](https://github.com/SFU-Archives/email-archiving) elsewhere on this GitHub site.
 
-The **guide** section provides general discussion of SFU Archives' approach to digital transfer. The **procedures** section contains more specific, step-by-step instructions, with separate procedures for producers ([SFU departmental staff and private donors](procedures/standard-producers/00-introduction.md)) and for [archivists](procedures/standard-archivists/00-introduction.md). For **email transfer**, see the separate [email archiving guidelines](https://github.com/SFU-Archives/email-archiving) elsewhere on this GitHub site.
-
-## Guide
-[Transfer scenarios](transfer-scenarios.md)
+Please note that the site is a work in progress and will be updated as new material is added.
 
 ## Procedures
 Standard transfer method (SFU MoveIt):
-- [Procedures for departmental staff and donors](procedures/standard-producers/00-introduction.md)
+- [Procedures for Departmental Staff and Donors](procedures/standard-producers/00-introduction.md)
 - [Procedures for Archives](procedures/standard-archives/00-introduction.md)
+
+## Guide
+[Transfer Scenarios](guide/transfer-scenarios.md)
 
 ## Downloads
 Checklists:
-- [Digital transfer checklist (for producers)](downloads/checklist-transfer.pdf)
-- [Digital transfer validation checklist (for Archives)](downloads/checklist-validation.pdf)
+- [Digital Transfer Checklist (for producers; pdf)](downloads/checklist-transfer.pdf)
+- [Digital Transfer Validation Checklist (for Archives; pdf)](downloads/checklist-validation.pdf)
 
 Workflow diagrams:
-- [Standard transfer workflow](downloads/workflow-standard.pdf)
+- [Standard Transfer Workflow (pdf)](downloads/workflow-standard.pdf)
 
-###### Last updated: Jan 6, 2021
+###### Last updated: Jan 14, 2021
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
