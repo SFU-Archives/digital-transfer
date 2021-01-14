@@ -2,31 +2,34 @@
 ###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation](03-validation.md) `|` 4. Ingest `|` [5. Completion](05-completion.md)
 
 # 4. Ingest
-###### Status: draft
 <img align="right" width="350" src="../../screenshots/04-ingest.png">
 
-Ingest is the process of putting validated transfer packages into the Archives' repository using Archivematica. You also run AIS scripts to import metadata from the transfer's `bag-info` file to populate the Accession record and generate accession forms and notices.
+Ingest is the process of putting validated transfer packages into the Archives' digital repository using Archivematica. You also run AIS scripts to import metadata from the transfer's `bag-info` file to populate the Accession record and generate accession forms and notices.
 
 ## Steps
 - [4.1 Upload transfer package to staging server](#41-upload-transfer-package-to-staging-server)
 - [4.2 Ingest to Archivematica backlog](#42-ingest-to-archivematica-backlog)
 - [4.3 Import Bag data to AIS Accession record](#43-import-bag-data-to-ais-accession-record)
-- [4.4 Output AIS forms and notices](#44-output-ais-forms-and-notices)
+- [4.4 Edit AIS accession record](#44-edit-ais-accession-record)
+- [4.5 Output AIS forms and notices](#45-output-ais-forms-and-notices)
+
+This phase begins after you have added validation metadata to the transfer package and saved it as a new Bag ([step 3.7 above](03-validation.md##37-edit-save-the-transfer-package)).
 
 <br clear="all"/>
 
 ## 4.1 Upload transfer package to staging server
 Upload the validated transfer package to the Archives' `pine` VM at `/var/transfersoure`. This directory can be accessed by Archivematica for ingest.
 
-You can upload the package by various methods, but whichever you choose **must be able to preserve the original timestamps of the files**, i.e. timestamps must not be overwritten with the date / time of copying.
+You can upload the package by various methods, but **must be able to preserve the original timestamps of the files**, i.e. timestamps must not be overwritten with the date / time of copying.
 - The most reliable method to ensure this is the command-line utility [rsync](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/rsync.md), described below.
-- You can, however, use an FTP client if you set its preferences to preserve timestamps.
-- In Cyberduck, go to Preferences > Transfers > Timestamps > Uploads; check `Preserve modification dates`.
-- You can also specify that Cyberduck verifies checksums on upload, though it is not clear that this in fact works.
+- You can, however, use an FTP client if you can set its preferences to preserve timestamps.
+- In Cyberduck, for example, go to **Preferences > Transfers > Timestamps > Uploads**; check `Preserve modification dates`.
+- You can also specify that Cyberduck verifies checksums on upload, though it is not clear that this in fact happens.
 
-By whatever method, you must have permissions to access the Archives' VMs, i.e. your email address must be included on the mail-list that controls access.
+By whatever method, you must have permissions to access the Archives' VMs, i.e. your email address must already be included on the mail-list that controls access.
 - Consult with RD to be added to the access list.
 
+### rsync
 To run rsync via command line in Terminal:
 
 ```
@@ -49,13 +52,14 @@ After copying is complete, connect to `pine` via Cyberduck to confirm that uploa
 <img align="right" width="400" src="../../screenshots/04-archivematica.png">
 
 Log on to Archivematica and ingest the transfer package to backlog.
-- Use the `aspen` pipeline for most standard transfers of textual records and related materials.
+- Use the `aspen` pipeline for most standard transfers of textual records.
 - Reserve the `alder` pipeline for transfers of large files, e.g. typically video and audio materials.
 
-On the `Transfer` tab:
+On the Archivematica **Transfer** tab:
 - Select `Transfer type` = "Unzipped bag".
-- Enter the `Transfer name` using the naming convention `ACNYYYY-NNN_Creator_Descriptor`, "ACN2021-100_SFUGeography_CommitteeFiles" (should be the same as the name of the validated transfer package created in [step 3.7](03-validation.md#37-edit-save-the-transfer-package)) above).
-- Enter the `Accession number` without the `ACN` prefix, e.g. "2021-100".
+- Enter the `Transfer name` using the naming convention `ACNYYYY-NNN_Creator_Descriptor`, e.g. "ACN2021-100_SFUGeography_CommitteeFiles".
+- The `Transfer name` should be the same as the name of the validated transfer package created in [step 3.7](03-validation.md#37-edit-the-transfer-package)) above).
+- Enter the `Accession number` without the "ACN" prefix, e.g. "2021-100".
 - Leave `Access system ID` blank.
 - Check `Automatically approve`.
 - Use the `Browse` button to navigate to and select the transfer package you uploaded to `pine` at [step 4.1 above](#41-upload-transfer-package-to-staging-server); click the `Add` button.
@@ -66,10 +70,10 @@ As Archivematica processes the transfer, you will be prompted at three decision-
 - `Examine contents` = "Yes".
 - `Create SIP` = "Send to backlog".
 
-At the end of the process, go to the Archivematica `Backlog` tab to verify completion.
+At the end of the process, go to the Archivematica **Backlog** tab to verify completion.
 
 Archivematica will sometimes encounter errors (and throw error messages) during processing.
-- "Non-fatal" errors can stand, e.g. failure to identify the file format of a particular file; but these should be noted in the Accession record (see section 5.2 below).
+- "Non-fatal" errors can stand, e.g. failure to identify the file format of a particular file; but these should be noted in the Accession record on the **Workflow > Other events** tab.
 - "Fatal" errors will cause Archivematica to quit the ingest process; consult with other staff and Artefactual support as needed to resolve these on a case-by-case basis.
 
 <br clear="all"/>
@@ -77,30 +81,33 @@ Archivematica will sometimes encounter errors (and throw error messages) during 
 ## 4.3 Import Bag data to AIS Accession record
 <img align="right" width="400" src="../../screenshots/04-import-confirm.png">
 
-Use the `bag-info.txt` file from the validated transfer package to populate the AIS Accession record that you created previously when generating an `Accession number` in [step 2.2](02-transfer.md#22-create-an-accession-record).
+AIS scripts can import data from transfer's `bag-info.txt` file to populate the AIS Accession record that you created previously when generating an `Accession number` in [step 2.2](02-transfer.md#22-create-an-accession-record).
 
 Before importing the bag data, make sure that a fonds and authority record for the creator already exist in the AIS.
 
-Launch the import script from the AIS:
-- Open the AIS Archives module.
+To launch the AIS import script:
+- Open the AIS **Archives module**.
 - On the **Home > Accessions > Actions** tab, click the `Import Bag metadata` link.
 - You will be prompted to select a folder: **always select the top-level folder of the bag** (e.g. `ACN2021-100_SFUGeography_CommitteeFiles`).
-- You can also run the script by navigating to the Accession record > **Reports** tab; click the `Image SFU MoveIt bag` link.
+- You can also run the script by navigating to the Accession record; on the **Reports** click the `Image SFU MoveIt bag` link.
 
-The AIS will prompt you to confirm that the `Accession number` entered in the `bag-info` file matches an Accession record in the AIS.
-- Values will mis-match if you launched the import script from the wrong Accession record in the AIS or if you entered the wrong number in Bagger when adding validation metadata to the bag.
+The AIS will route you to a screen to confirm that the `Accession number` entered in the `bag-info` file matches an Accession record in the AIS.
+- Values will mis-match if you launched the import script from the wrong Accession record in the AIS or if you entered the wrong number in Bagger when adding validation metadata to the bag ([step 3.7](#37-edit-the-transfer-package)).
 - Confirm, or enter the correct `Accession number` as required.
+- If you correct the `Accession number`, the import script will add that information to the Accession record's `General note` field.
 
 The AIS imports the bag data and routes you to a **Data Entry** screen to review / verify the data and add other descriptive information as required.
-- All fields that have a red arrow next to them should be completed; the rest are optional.
-- Other optional note fields can be accessed by buttons (e.g. `+ Add note on provenance`).
-- See the [AIS documentation site](https://github.com/SFU-Archives/ais-database) for guidance on all fields in [AIS Accession records](https://github.com/SFU-Arhives/ais-database/blob/master/modules/archives/accession.md); the following notes highlight specifics relevant to the accessioning of digital transfers.
 
 <br clear="all"/>
 
-### Transfer tab
+## 4.4 Edit AIS accession record
 <img align="right" width="400" src="../../screenshots/04-import-edit.png">
 
+All fields that have a red arrow next to them should be completed; the rest are optional.
+- Other optional note fields can be accessed by links (e.g. `+ Add note on provenance`).
+- See the [AIS documentation site](https://github.com/SFU-Archives/ais-database) for guidance on all fields in [AIS Accession records](https://github.com/SFU-Arhives/ais-database/blob/master/modules/archives/accession.md); the following notes highlight specifics relevant to the accessioning of digital transfers.
+
+### Transfer tab
 Update the default `Accession title` ("SFU MoveIt transfer") with something more descriptive.
 - To use the transfer name supplied by the contact (displayed immediately above), click the `Use bag database` button.
 
@@ -111,47 +118,53 @@ The shaded `Records creator` field shows the value that was supplied by the cont
 
 ### Contact tab
 The contact's information as supplied in the bag is displayed in the shaded fields.
-- Select the contact's name from the `Contact ID` field to link the transfer to the contact's existing AIS authority record.
-- If the contact's supplied information (e.g. `Position / Job title`) or `Email address`) differs from the information on the authority record, you can update the authority record by clicking the `Use bag info` button on any given field; but if the authority record information is more accurate, leave as is.
+- Link the accession to an existing contact by selecting their name from drop-down list in the `Contact's AIS authority ID` field.
+- If the contact's supplied information (e.g. `Position / Job title` or `Email address`) differs from the information on the authority record, you can update the authority record by clicking the `Use bag info` button on any given field; but if the authority record information is more accurate, leave as is.
 
-If the contact's name does not appear in the drop-down list in the `Contact ID` field, create a new AIS authority record for the contact.
-- Link the contact to a department / organization.
-- Click the `Add new` button next to the contact's name to create an authority record.
+If there is no existing AIS authority record for the contact or the department / organization:
+- Click the `+` (Add new) button next to the drop-down list to create an authority record.
 
 ### Description tab
-The `Date range` field is based on the data the contact submitted with the bag.
-- If you know it is not accurate, enter the correct information here.
+The `Date range` fields default to values based on the information submitted with the bag.
+- If you know it is not accurate, enter the correct data here.
 
-The `Bag size` field is calculated from the actual size of the transfer.
+The `Physical description` field defaults to the `Bag size` calculated from the actual size of the transfer.
 
 ### Scope and content tab
-The `Scope and content` note field combines the descriptive information supplied by the contact in the bag and that added by the archivist during validation (displayed in shaded fields here).
+The `Access scope and content` field combines the descriptive information supplied by the contact in the bag (`Producer's description`) and that added by the archivist during validation (`Archivist's description`).
 - Edit as required for the Accession record.
 
-### Dates tab
-These fields record dates of events in the workflow: bagging and transfer (by the contact) and ingest (by the archivist).
-- The `Bagging date` is generated by SFU MoveIt on package creation.
-- To set the `Transfer date` to the `Bagging date` click the `Use same` button; or enter it manually if these are known to be different.
-- The `Ingest date` and `Staff responsible` values default to the current date and staff name; correct if needed.
-
 ### Management tab
-Flag any known privacy, copyright, or long-term preservation issues.
+Flag any known privacy, copyright, or long-term preservation issues. This tab also contains the `General note` field for information relating to the transfer that does not fit into a more specific field.
+
+### Dates tab
+These fields record dates of events in the workflow: packaging and transfer (by the contact), and validation and ingest (by the archivist).
+- These dates will later appear on the **Workflow > Other events** tab of the Accession record.
+- The `Packaged date` is generated by SFU MoveIt on package creation.
+- To set the `Transfer date` to the `Bagging date` click the `Use same` button; or enter it manually if these are known to be different.
+- The `Validation` data derives from the validated bag.
+- The `Ingest` values default to the current date and staff name; correct if needed (the import script assumes you have already ingested the transfer to Archivematica backlog).
 
 ### AIP tab
-Assuming you have already ingested the transfer to Archivematica backlog ([step 4.2 above](#42-ingest-to-archivematica-backlog), click the `Create AIP` button to register the backlog package in the AIS.
+Assuming you have already ingested the transfer to Archivematica backlog ([step 4.2 above](#42-ingest-to-archivematica-backlog), click the `+ Register backlog packagee` link to create an AIP record in the AIS.
 - The AIS `AIP` table tracks both fully processed AIPs as well as packages stored in backlog.
+- Copy / paste the AIP `UUID` from the Archivematica **Backlog** tab.
+- The `Package name` field defaults to the name of the Bag.
 
 ### Submit data
-Click the `Submit` button to complete data entry
-
-
+Click the `Submit` button to complete data entry.
+- A popup notice tells you the process is completed and takes you to the full Accession record.
 
 <br clear="all"/>
 
 ## 4.4 Output AIS forms and notices
 <img align="right" width="400" src="../../screenshots/04-forms-notices.png">
 
+As part of the completion process triggered by the `Submit` button, the AIS outputs a number of files to a folder on your desktop `~/Desktop/DigitalTransfer/<<AccessionNumber>>`. These are:
+- The pdf `Accession Record Form` for the collection file (`*AccessionForm_Full.pdf`) and the **Unprocessed Holdings** tab of the hardcopy finding aid (`*AccessionForm_Public.pdf`).
+- The `Digital Transfer Completed Notice` (pdf) and email template text (txt file) to be sent to the contact (see [step 5 below](05-completion.md)).
+
 <br clear="all"/>
 
-###### Last updated: Jan 11, 2021
-###### [< Previous: 4. Ingest](04-ingest.md) `|` [Next: 5. Completion >](#05-completion.md)
+###### Last updated: Jan 13, 2021
+###### [< Previous: 3. Validation](03-validation.md) `|` [Next: 5. Completion >](05-completion.md)

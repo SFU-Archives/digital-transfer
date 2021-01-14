@@ -2,12 +2,11 @@
 ###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` 3. Validation `|` [4. Ingest](04-ingest.md) `|` [5. Completion](05-completion.md)
 
 # 3. Validation
-###### Status: draft
 <img align="right" width="350" src="../../screenshots/03-validation.png">
 
-Validation is the process of deciding whether or not to accept a transfer into the repository. It verifies that the transfer package complies with the BagIt specification, that no data was lost or corrupted during transmission, and that transfer contents meet expectations and are suitable for long-term preservation.
+Validation is the process of deciding whether or not to accept a transfer into the repository. It verifies that the transfer package complies with the BagIt specification, that no data was lost or corrupted during transmission, and that the contents of the transfer meet expectations and are suitable for long-term preservation.
 
-The analysis undertaken during validation also provides descriptive data that should be captured in the Accession record for later use during arrangement and description.
+The analysis undertaken during validation also generates descriptive data that should be captured in the Accession record for later use during arrangement and description.
 
 ## Steps
 - [3.1 Scan for viruses](#31-scan-for-viruses)
@@ -16,7 +15,7 @@ The analysis undertaken during validation also provides descriptive data that sh
 - [3.4 Analyze files](#34-analyze-files)
 - [3.5 Create analysis reports](#35-create-analysis-reports)
 - [3.6 Accept or reject the transfer](#36-accept-or-reject-the-transfer)
-- [3.7 Edit / save the transfer package](#37-edit-save-the-transfer-package)
+- [3.7 Edit the transfer package](#37-edit-the-transfer-package)
 - [Transfer Validation Checklist](../../downloads/checklist-validation.pdf)
 
 This phase begins after you have downloaded the transfer package to your desktop ([step 2.3](02-transfer.md#23-download-the-transfer-package)).
@@ -35,14 +34,13 @@ Use [ClamAV](https://github.com/SFU-Archives/digital-repository-utilities/blob/m
 Run ClamAV via the command line in Terminal.
 - Refresh the virus definitions database: `$ freshclam`
 - Scan the transfer package: `$ clamscan -ri --log=<<log_file_path/log.txt>> <<transfer_folder>>`.
-
-The `log` flag instructs `clamscan` to output a `scan log` text file to the file path specified.
+- The `log` flag instructs `clamscan` to output a `scan log` text file to the file path specified.
 - The `-r` flag = "recursive": the scan will include all sub-directories in the transfer folders.
 - The `-i` flag = "infected": the log will only print files that are infected, plus summary data.
 
-If infected files are found:
+If ClamAV finds infected files:
 - Confirm that you can safely delete the files and delete them.
-- Make a note in the Accession record (e.g. in the Events section).
+- Make a note in the Accession record (e.g. on the **Workflow > Other events** tab).
 - Retain the `scan log` on the collection file as documentation.
 - Follow up with the producer to make them aware that they have virus issues.
 
@@ -53,7 +51,7 @@ For more information about ClamAV (installation and use), see: [Digital Reposito
 ## 3.2 Validate bag
 <img align="right" width="350" src="../../screenshots/03-bagger.png">
 
-Use Bagger to verify that the transfer package is a properly formed "bag" (complies with the BagIt specification) and that no data was lost or corrupted during deposit (the files' pre- and post-transfer checksums match).
+Use [Bagger](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/bagger.md) to verify that the transfer package is a properly formed "bag" (complies with the BagIt specification) and that no data was lost or corrupted during deposit (the files' pre- and post-transfer checksums match).
 
 To launch Bagger:
 - Navigate to its install location (e.g. `Applications/bagger-2.8.1`.
@@ -71,20 +69,21 @@ If the transfer package fails validation:
 
 You can also use Bagger to view the descriptive metadata provided by the producer through SFU MoveIt.
 - In the transfer package, this producer-supplied metadata is contained in the `bag-info.txt` file.
-- This information is useful [in making the validation decision to accept or reject the transfer](#36-accept-or-reject-the-transfer).
+- This information should be reviewed when deciding to accept or reject the transfer ([see step 3.6 below](#36-accept-or-reject-the-transfer)).
 
-For more information about Bagger (installation and use), see: Digital Repository Utilities > Bagger (forthcoming).
+For more information about Bagger (installation and use), see: [Digital Repository Utilities > Bagger](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/bagger.md).
 
 <br clear="all"/>
 
 ## 3.3 Document directory structure
 <img align="right" width="400" src="../../screenshots/03-tree.png">
 
-Use [Tree](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/tree.md) to capture the original directory structure of the transfer as a text representation. This provides a handy overview of the transfer and supports later appraisal, arrangement, and description.
+Use [Tree](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/tree.md) to capture the original directory structure of the transfer as a text representation. This provides a handy overview of the transfer and supports later appraisal, arrangement and description.
 
 Run Tree via command line in Terminal: `$ tree -d -o <<file_path_for_output_report>> <<path_to_target_folder>>`
 - The `-d` flag means Tree will list only directories; omit to show all contents down to the file level if desired.
 - The `-o` flag = output a text report to the specified location (include the file name with `.txt` extenion, e.g. `tree.txt`).
+- The easiest way to get the `<<path_to_target_folder>>` is to simply drag the transfer folder into the Terminal window.
 
 For more information about Tree (installation and use), see: [Digital Repository Utilities > Tree](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/tree.md).
 
@@ -93,7 +92,7 @@ For more information about Tree (installation and use), see: [Digital Repository
 ## 3.4 Analyze files
 <img align="right" width="400" src="../../screenshots/03-brunnhilde.png">
 
-Use Brunnhilde to generate reports that analyze the files and file formats included in the transfer.
+Use [Brunnhilde](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/brunnhilde.md) to generate reports that analyze the files and file formats included in the transfer.
 
 Start Brunnhilde via the command line in Terminal: `$ python3 <<path_to_Brunnhilde_application_folder/main.py`
 - The easiest way is to type `python3 `, then drag the `main.py` file into Terminal and hit `Return`.
@@ -101,10 +100,10 @@ Start Brunnhilde via the command line in Terminal: `$ python3 <<path_to_Brunnhil
 
 In Brunnhilde:
 - Make sure you **do not** run a virus scan (already done with ClamAV in [step 3.1 above](#31-scan-for-viruses)) – uncheck these boxes on the `Options` tab.
-- On the `Directory` tab, click the `Browse` button to select the transfer package as the `Source` – make sure the transfer package has been unzipped.
+- On the **Directory** tab, click the `Browse` button to navigate to and select the transfer package as the `Source` – make sure the transfer package has been unzipped.
 - Specify a project folder (e.g. on your deskotp) as the `Destination` for Brunnhilde output reports.
-- Enter the `Accession number` (created in step 2.x), e.g. `ACN-2021-100`; Brunnhilde will use this as the name of the folder for the output reports.
-- Click the `Start scan` button: the `Status` field will show scan in progress.
+- Enter the `Accession number` (created in step 2.x), e.g. `ACN2021-100`; Brunnhilde will use this as the name of the folder for the output reports.
+- Click the `Start scan` button: the `Status` field will show "Scan in progress."
 - Depending on the size of the transfer, it may take several minutes to complete.
 
 <img align="right" width="400" src="../../screenshots/03-brunnhilde-output.png">
@@ -121,11 +120,11 @@ For more information about Brunnhilde (installation and use), see: Digital Repos
 <img align="right" width="400" src="../../screenshots/03-analysis-reports.png">
 
 Use the FileAnalysis utility, a custom FileMaker database, to work more easily with the Brunnhilde output data.
-- You can download a copy of the utility to your desktop project folder from the ARMD shared drive at `ITM002-40 > ArchivalProcessingUtilities` or from the GitHub repository.
+- You can download a copy of the utility to your desktop project folder from the ARMD shared drive at `ITM002-40 > ArchivalProcessingUtilities` or from the Digital Repository Utilities > FileAnalysis utility (forthcoming).
 
-Open FileAnalysis and work through the five tabs.
+Open FileAnalysis and work through the four tabs.
 - The screen sidebars give more detailed instructions.
-- On Tab 1 `Import data`, upload the Brunnhilde csv files, copy and paste Tree output (created in [step 3.3 above](#33-document-directory-structure)), copy and paste the file paths of any infected files reported by ClamAv in [step 3.1](#31-scan-for-viruses).
+- On Tab 1 `Import data`, copy and paste Tree output (created in [step 3.3 above](#33-document-directory-structure)), copy and paste the file paths of any infected files reported by ClamAv in [step 3.1](#31-scan-for-viruses), then click the `Import Brunnhilde csv data` link.
 - On Tab 4 `Create reports`, view summary results, navigate to the various reports on a list screen (where data can be searched or sorted), print or create pdf reports.
 
 The data and reports are useful for getting an overview of transfer contents, e.g.
@@ -135,30 +134,37 @@ The data and reports are useful for getting an overview of transfer contents, e.
 - Get the date range of the materials based on the `Last modified` time-stamps (though you must determine whether these are reliable or not).
 - Identify duplicate files included in the transfer.
 
-This information is useful for both validation ([decide whether or not to accept the transfer](#36-accept-or-reject-the-transfer)) and description ([when updating the Accession record](#38-update-the-accession-record)).
+This information is useful for making the validation decision ([next step below](#36-accept-or-reject-the-transfer)), accessioning ([step 3.8 below](#38-update-the-accession-record)), and later archival arrangement and description.
 
-For more detailed documentation and guidance on use, see: Digital Repository Utilities > File Analysis utility (forthcoming).
+For more information about the FileAnalysis utility (guidance on use), see: Digital Repository Utilities > File Analysis utility (forthcoming).
 
 <br clear="all"/>
 
 ## 3.6 Accept or reject the transfer
 <img align="right" width="300" src="../../screenshots/03-validation-checklist.png">
 
-Use the [Validation checklist](../../downloads/checklist-validation.pdf) with the information you have gathered to determine whether or not to accept the transfer for ingest.
+Use the [Validation checklist](../../downloads/checklist-validation.pdf) with the information you have gathered thus far to determine whether or not to accept the transfer for ingest.
 - The checklist applies various tests to the transfer and suggests the actions you should take in the event of a fail.
-- Not all (in fact very few) "fails" require you to outright reject a transfer, but they point to issues that may need further analysis or follow-up for clarification with the producer.
+- Not all (in fact very few) "fails" require you to reject a transfer outright; instead, they point to issues that may need further analysis or follow-up for clarification with the producer.
+
+If you do reject the transfer, always follow up with the producer contact to explain why and what their options are. Update the Accession record created in [step 2.2 above](02-transfer.md#22-create-an-accession-record).
+- Change the Accession `Status` to "Rejected".
+- Use the `General note` field to explain the rationale for rejection.
 
 <br clear="all"/>
 
 ## 3.7 Edit / save the transfer package
 <img align="right" width="400" src="../../screenshots/03-edit-bag.png">
 
-If you accept the transfer ("validates successfully"), use Bagger to add validation metadata to the transfer package. This means saving it as a new package.
+If you accept the transfer ("validates successfully"), use Bagger to review / edit the metadata supplied by the producer and to add validation metadata to the transfer package. This means saving it as a new package.
 
-To add metadata:
+To review the supplied metadata:
 - Open the transfer package in Bagger ([see step 3.2 above](#32-validate-bag)).
-- Add / edit the fields in Bagger's `Bag Info` panel; note that fields may be displayed in random order.
-- `Internal-Sender-Identifier`: enter the Accession number in form YYYY-NNN (**do not include the ACN prefix**).
+- View / edit the fields in Bagger's `Bag Info` panel; note that fields may be displayed in random order.
+- **Make sure that the contact's information is correct (e.g. RRSDA, department)**; this information will stick with the transfer and will be used later to populate the AIS Accession record.
+
+Add validation metadata in the Bagger `Bag Info` panel:
+- `Internal-Sender-Identifier`: enter the Accession number in form YYYY-NNN (e.g. "2021-001"); **do not include the ACN prefix in this field.**
 - `Internal-Sender-Description`: enter your own scope and content note if needed to elaborate / correct the producer's description (found in the `External-Sender-Description` field).
 - `Internal-Validation-Date`: enter the date of the validation decision in form YYYY-MM-NN.
 - `Internal-Validation-By`: enter the name of the archivist responsible for validation.
@@ -176,5 +182,5 @@ This new Bag is now the **validated transfer package** that you will upload to A
 
 <br clear="all"/>
 
-###### Last updated: Jan 11, 2021
-###### [< Previous: Transfer](02-transfer.md) `|` [Next: 4. Ingest >](04-ingest.md)
+###### Last updated: Jan 13, 2021
+###### [< Previous: 2. Transfer](02-transfer.md) `|` [Next: 4. Ingest >](04-ingest.md)

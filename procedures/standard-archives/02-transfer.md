@@ -2,7 +2,6 @@
 ###### [1. Pre-Transfer](01-pre-transfer.md) `|` 2. Transfer `|` [3. Validation](03-validation.md) `|` [4. Ingest](04-ingest.md) `|` [5. Completion](05-completion.md)
 
 # 2. Transfer
-###### Status: draft
 <img align="right" width="350" src="../../screenshots/02-transfer.png">
 
 The main activities in the **transfer** phase belong to the producer, who packages the files using SFU MoveIt and uploads the transfer package to the deposit folder you created previously in [step 1.2](01-pre-transfer.md#12-create-a-deposit-folder). For a description of these activities from the producer's point of view, see [Standard Transfer Method: Procedures for SFU Staff and Private Donors, section 2. Transfer](../standard-producers/02-transfer.md).
@@ -43,5 +42,5 @@ Make a note of the Accession number, as you will need it later during [step 3, V
 Download a copy of the transfer package from SFU Vault to your desktop for validation and analysis.
 - It is possible to open and inspect the contents on SFU Vault, but the various software tools used in the [Validation phase](03-validation.md) cannot be run on the deposit Vault space.
 
-###### Last updated: Jan 8, 2021
-###### [< Previous: Pre-Transfer](01-pre-transfer.md) `|` [Next: 3. Validation >](03-validation.md)
+###### Last updated: Jan 13, 2021
+###### [< Previous: 1. Pre-Transfer](01-pre-transfer.md) `|` [Next: 3. Validation >](03-validation.md)

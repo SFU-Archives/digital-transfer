@@ -2,7 +2,6 @@
 ###### 1. Pre-Transfer `|` [2. Transfer](02-transfer.md) `|` [3. Validation](03-validation.md) `|` [4. Ingest](04-ingest.md) `|` [5. Completion](05-completion.md)
 
 # 1. Pre-Transfer
-###### Status: draft
 <img align="right" width="350" src="../../screenshots/01-pre-transfer.png">
 
 The pre-transfer phase is typically triggered by the first request from a producer (SFU departmental staff or a private donor) to send digital materials to the Archives. [Determine whether or not to accept the request](#11-accept-or-reject-a-request-to-transfer). If accepted, [create a deposit folder](#12-create-a-deposit-folder) on SFU Vault. If the producer will be regularly sending new transfers in the future, you should create a [Digital Transfer Account](#13-create-a-digital-transfer-account) for the person. Once individuals have accounts, they do not need to request permission for subsequent transfers, and the transfer process more resembles a self-deposit system.
@@ -98,5 +97,5 @@ To create an account:
 
 - For more information on data entry and management of account record in the AIS database, see the separate section on this GitHub site for AIS documentation (forthcoming).
 
-###### Last updated: Nov 18, 2020
+###### Last updated: Jan 13, 2021
 ###### [< Previous: Introduction](00-introduction.md) `|` [Next: 2. Transfer >](02-transfer.md)

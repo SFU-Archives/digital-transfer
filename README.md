@@ -1,6 +1,6 @@
 # Digital Transfer
-###### Status: under development
-This site provides documentation relating to the transfer of digital records to SFU Archives. It is a work in progress and will be updated as new material is added.
+###### Status: in progress
+SFU departments and private donors can transfer their digital archival records to SFU Archives. This site documents workflows and processes. It is a work in progress and will be updated as new material is added.
 
 The **guide** section provides general discussion of SFU Archives' approach to digital transfer. The **procedures** section contains more specific, step-by-step instructions, with separate procedures for producers ([SFU departmental staff and private donors](procedures/standard-producers/00-introduction.md)) and for [archivists](procedures/standard-archivists/00-introduction.md). For **email transfer**, see the separate [email archiving guidelines](https://github.com/SFU-Archives/email-archiving) elsewhere on this GitHub site.
 
