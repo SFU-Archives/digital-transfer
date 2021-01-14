@@ -1,5 +1,5 @@
 ###### [Digital Transfer](../../README.md) > Standard Transfer: Procedures for Produceers
-###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation](03-validation.md) `|` [4. Ingest](04-ingest.md) `|` [5. Completion](05-completion.md)
+###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md) `|` [5. Post-transfer](05-post-transfer.md)
 
 # Standard Transfer Method: Procedures for SFU Staff and Private Donors
 ###### Status: under development
@@ -7,7 +7,7 @@ These procedures are written for SFU staff and private donors ("producers") who 
 
 For the same process from the Archives point of view, see [Standard Transfer Method: Procedures for Archives](../standard-archives/00-introduction.md).
 
-![Workflow diagram](../../screenshots/digital-transfer-workflow.png)
+![Workflow diagram](../../screenshots/00-digital-transfer-workflow.png)
 
 [1. Pre-transfer](01-pre-transfer.md)
 - 1.1 Request to make a transfer
@@ -33,4 +33,5 @@ For the same process from the Archives point of view, see [Standard Transfer Met
 - 5.1 Maintain record of transfers
 - 5.2 Request retrieval
 
-###### Last updated: Nov 18, 2020
+###### Last updated: Jan 14, 2021
+###### [Next: 1. Pre-transfer >](01-pre-transfer.md)
