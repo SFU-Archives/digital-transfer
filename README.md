@@ -6,7 +6,7 @@ Please note that the site is a work in progress and will be updated as new mater
 ## Procedures
 Standard transfer method (SFU MoveIt):
 - [Procedures for Departmental Staff and Donors](procedures/standard-producers/00-introduction.md)
-- [Procedures for Archives](procedures/standard-archives/00-introduction.md) | [Download as PDF](downloads/procedures-archives-full.pdf)
+- [Procedures for Archives](procedures/standard-archives/00-introduction.md)
 
 ## Guide
 [Transfer Scenarios](guide/transfer-scenarios.md)
@@ -19,7 +19,10 @@ Checklists:
 Workflow diagrams:
 - [Standard Transfer Workflow (pdf)](downloads/workflow-standard.pdf)
 
-###### Last updated: Jan 14, 2021
+Procedures as single pdf documents:
+- [Procedures for Archives](downloads/procedures-archives-full.pdf)
+
+###### Last updated: Jan 19, 2021
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
