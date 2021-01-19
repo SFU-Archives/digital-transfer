@@ -19,8 +19,8 @@ Checklists:
 Workflow diagrams:
 - [Standard Transfer Workflow (pdf)](downloads/workflow-standard.pdf)
 
-Procedures as single pdf documents:
-- [Procedures for Archives](downloads/procedures-archives-full.pdf)
+Procedures as single documents:
+- [Procedures for Archives (pdf; snapshot Jan 2021)](downloads/procedures-archives-full.pdf)
 
 ###### Last updated: Jan 19, 2021
 
