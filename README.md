@@ -6,7 +6,7 @@ Please note that the site is a work in progress and will be updated as new mater
 ## Procedures
 Standard transfer method (SFU MoveIt):
 - [Procedures for Departmental Staff and Donors](procedures/standard-producers/00-introduction.md)
-- [Procedures for Archives](procedures/standard-archives/00-introduction.md)
+- [Procedures for Archives](procedures/standard-archives/00-introduction.md) | [Download as PDF](downloads/procedures-archives-full.pdf)
 
 ## Guide
 [Transfer Scenarios](guide/transfer-scenarios.md)
