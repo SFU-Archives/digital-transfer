@@ -33,5 +33,9 @@ For the same process from the Archives point of view, see [Standard Transfer Met
 - 5.1 Maintain record of transfers
 - 5.2 Request retrieval
 
-###### Last updated: Jan 14, 2021
+**Appendices**
+- [A. Transfer Metadata](../appendices/a-transfer-metadata.md)
+- [B. Anatomy of the Transfer Package](../appendices/b-anatomy-transfer-package.md)
+
+###### Last updated: Jan 20, 2021
 ###### [Next: 1. Pre-transfer >](01-pre-transfer.md)

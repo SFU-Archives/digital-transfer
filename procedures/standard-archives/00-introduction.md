@@ -40,4 +40,9 @@ For the same process from the producer's point of view, see [Standard Transfer M
 - [5.2 File transfer documentation](05-completion.md#52-file-transfer-documentation)
 - [5.3 Delete transitory copies](05-completion.md#53-delete-transitory-copies)
 
-###### Last updated: Jan 14, 2021
+**Appendices**
+- [A. Transfer Metadata](../appendices/a-transfer-metadata.md)
+- [B. Anatomy of the Transfer Package](../appendices/b-anatomy-transfer-package.md)
+
+###### Last updated: Jan 20, 2021
+###### [Next: 1. Pre-transfer >](01-pre-transfer.md)
