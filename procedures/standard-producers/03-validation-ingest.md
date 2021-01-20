@@ -1,11 +1,10 @@
 ###### [Digital Transfer](../../README.md) > [Standard Transfer: Procedures for Producers](00-introduction.md)
-###### 1. Pre-Transfer `|` [2. Transfer](02-transfer.md) `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md) `|` [5. Post-transfer](05-post-transfer.md)
+###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` 3. Validation / Ingest `|` [4. Completion](04-completion.md) `|` [5. Post-transfer](05-post-transfer.md)
 
-# 1. Pre-transfer
+# 3. Validation and ingest
 ###### Status: draft
-<img align="right" width="350" src="../../screenshots/01-pre-transfer.png">
+<img align="right" width="350" src="../../screenshots/03-validation-ingest.png">
 
-Before you make your first transfer, contact the Archives to [request a deposit folder on SFU Vault](#11-request-access-to-a-deposit-folder). You will also need to [download SFU MoveIt](#12-download-sfu-moveit), the Archives' digital packaging tool. If you will be making regular digital transfers, consider requesting a [Digital Transfer Account](#13-request-an-onging-digital-transfer-account) as this will provide you with continuing access to the deposit folder.
 
 ## Steps
 - [1.1 Request a deposit folder](#11-request-a-deposit-folder)

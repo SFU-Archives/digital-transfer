@@ -10,16 +10,16 @@ For the same process from the Archives point of view, see [Standard Transfer Met
 ![Workflow diagram](../../screenshots/00-digital-transfer-workflow.png)
 
 [1. Pre-transfer](01-pre-transfer.md)
-- 1.1 Request to make a transfer
-- 1.2 Download and install SFU MoveIt
-- 1.3 Obtain an ongoing Digital Transfer Account
+- [1.1 Request a deposit folder](01-pre-transfer.md#11-request-a-deposit-folder)
+- [1.2 Download SFU MoveIt](01-pre-transfer.md#12-download-sfu-moveit)
+- [1.3 Request an ongoing Digital Transfer Account](01-pre-transfer.md#13-request-an-ongoing-digital-transfer-account)
 
 [2. Transfer](02-transfer.md)
-- 2.1 Identify records for transfer
-- 2.2 Create transfer folder(s)
-- 2.3 Create transfer packages with SFU MoveIt
-- 2.4 Upload transfer packages to SFU Vault
-- [Transfer Checklist][../../downloads/checklist-transfer.pdf]
+- [2.1 Identify records for transfer](02-transfer.md#21-identify-records-for-transfer)
+- [2.2 Create transfer folder(s)](02-transfer.md#22-create-transfer-folders)
+- [2.3 Create a transfer package with SFU MoveIt](02-transfer.md#23-create-a-transfer-package-with-sfu-moveit)
+- [2.4 Upload the transfer package to SFU Vault](02-transfer.md#24-upload-the-transfer-package-to-sfu-vault)
+- [Transfer Checklist](../../downloads/checklist-transfer.pdf)
 
 [3. Validation and Ingest](03-validation-and-ingest.md)
 - 3.1 Provide clarifications as required
