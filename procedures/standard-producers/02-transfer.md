@@ -5,7 +5,7 @@
 ###### Status: draft
 <img align="right" width="350" src="../../screenshots/02-transfer.png">
 
-The **transfer phase** begins when you are ready to send digital records to the Archives. You [identify](#21-identify-records-for-transfer) and [gather the records](#22-create-transfer-folders) for transfer, [package them with SFU MoveIt](#23-create-a-transfer-package-with-sfu-moveit), and [upload the transfer package](#24-upload-the-transfer-package-to-sfu-vault) to the deposit folder on SFU Vault. For a handy overview / reminder of the steps, download the [Transfer Checklist (pdf)](../../downloads/checklist-transfer.pdf).
+The **transfer phase** begins when you are ready to send digital records to the Archives. You [identify](#21-identify-records-for-transfer) and [gather the records](#22-create-transfer-folders) for transfer, [package them with SFU MoveIt](#23-create-a-transfer-package-with-sfu-moveit), and [upload the transfer package](#24-upload-the-transfer-package-to-sfu-vault) to the deposit folder on SFU Vault. For handy reference, download and retain the [Digital Transfer Checklist (pdf)](../../downloads/checklist-transfer.pdf).
 
 ## Steps
 - [2.1 Identify records for transfer](#21-identify-records-for-transfer)
@@ -23,7 +23,7 @@ The **transfer phase** begins when you are ready to send digital records to the 
     - [SFU Vault web version with transfer account](#sfu-vault-web-version-with-transfer-account)
     - [SFU Vault web version with no transfer account](#sfu-vault-web-version-with-no-transfer-account)
     - [Notification](#notification)
-- [Transfer Checklist](../../downloads/checklist-transfer.pdf)
+- [Digital Transfer Checklist](../../downloads/checklist-transfer.pdf)
 
 ## 2.1 Identify records for transfer
 Not all digital records can or should be transferred to the Archives for permanent preservation. Consider the following factors when determining which records are suitable for transfer.
@@ -101,7 +101,7 @@ It will not always be feasible to keep transfer folder size below these threshol
 - Consult with an archivist about the best transfer method for packages larger than 2 GB.
 
 ## 2.3 Create a transfer package with SFU MoveIt
-<img align="right" width="400" src="../../screenshots/01-sfu-moveit.png">
+<img align="right" width="400" src="../../screenshots/02-sfu-moveit.png">
 
 Use SFU MoveIt to create the transfer package.
 - Double-click the `sfu-moveit` application icon to open the utility.
