@@ -1,8 +1,7 @@
 ###### [Digital Transfer](../../README.md) > [Standard Transfer: Procedures for Producers](00-introduction.md)
-###### [1. Pre-Transfer](01-pre-transfer.md) `|` 2. Transfer `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md) `|` [5. Post-transfer](05-post-transfer.md)
+###### [1. Pre-Transfer](01-pre-transfer.md) `|` 2. Transfer `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md)
 
 # 1. Transfer
-###### Status: draft
 <img align="right" width="350" src="../../screenshots/02-transfer.png">
 
 The **transfer phase** begins when you are ready to send digital records to the Archives. You [identify](#21-identify-records-for-transfer) and [gather the records](#22-create-transfer-folders) for transfer, [package them with SFU MoveIt](#23-create-a-transfer-package-with-sfu-moveit), and [upload the transfer package](#24-upload-the-transfer-package-to-sfu-vault) to the deposit folder on SFU Vault. For handy reference, download and retain the [Digital Transfer Checklist (pdf)](../../downloads/checklist-transfer.pdf).
@@ -157,5 +156,5 @@ An archivist will send you an email confirming receipt of your transfer.
 - **If you do not receive a confirmation email within several days of your deposit, please email the Archives directly (moveit@sfu.ca)** it may indicate problems with the automated notice system.
 
 
-###### Last updated: Jan 20, 2021
+###### Last updated: Jan 22, 2021
 ###### [< Previous: 1. Pre-transfer](01-pre-transfer.md) | [Next: 3. Validation / Ingest >](03-validation-ingest.md)

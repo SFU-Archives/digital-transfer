@@ -1,5 +1,5 @@
 ###### [Digital Transfer](../../README.md) > Standard Transfer: Procedures for Producers
-###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md) `|` [5. Post-transfer](05-post-transfer.md)
+###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md)
 
 # Standard Transfer Method: Procedures for Producers
 ###### Status: under development
@@ -22,20 +22,17 @@ For the same process from the Archives point of view, see [Standard Transfer Met
 - [Transfer Checklist](../../downloads/checklist-transfer.pdf)
 
 [3. Validation and Ingest](03-validation-and-ingest.md)
-- 3.1 Provide clarifications as required
-- 3.2 Receive notice of validation decision
+- [3.1 Validation](#31-validation)
+- [3.2 Ingest](#32-ingest)
 
 [4. Completion](04-completion.md)
-- 4.1 Receive notice of completion of transfer
-- 4.2 Delete copies from active system
-
-[5. Post-transfer](05-post-transfer.md)
-- 5.1 Maintain record of transfers
-- 5.2 Request retrieval
+- [4.1 Receive completion notice](04-completion.md#41-receive-completion-notice)
+- [4.2 Delete transferred records](04-completion.md#42-delete-transferred-records)
 
 **Appendices**
 - [A. Transfer Metadata](../appendices/a-transfer-metadata.md)
 - [B. Anatomy of the Transfer Package](../appendices/b-anatomy-transfer-package.md)
+- [C. Post-transfer](../appendices/c-post-transfer.md)
 
-###### Last updated: Jan 20, 2021
+###### Last updated: Jan 22, 2021
 ###### [Next: 1. Pre-transfer >](01-pre-transfer.md)

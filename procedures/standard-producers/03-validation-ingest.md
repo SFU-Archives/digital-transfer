@@ -1,55 +1,46 @@
 ###### [Digital Transfer](../../README.md) > [Standard Transfer: Procedures for Producers](00-introduction.md)
-###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` 3. Validation / Ingest `|` [4. Completion](04-completion.md) `|` [5. Post-transfer](05-post-transfer.md)
+###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` 3. Validation / Ingest `|` [4. Completion](04-completion.md)
 
 # 3. Validation and ingest
 ###### Status: draft
 <img align="right" width="350" src="../../screenshots/03-validation-ingest.png">
 
+[Validation](#31-validation) and [ingest](#32-ingest) are operations done by Archives and typically do not require any action on the part of producers. Archives may, however, contact you during these phases to request clarifications or in the event that there are problems with the transfer. For more information about these processes, see the point-of-view procedures for archivists, step 3 ([validation](../standard-archives/03-validation.md)) and step 4 ([ingest](../standard-archives/04-ingest.md)).
 
 ## Steps
-- [1.1 Request a deposit folder](#11-request-a-deposit-folder)
-- [1.2 Download SFU MoveIt](#12-download-sfu-moveit)
-- [1.3 Request an ongoing Digital Transfer Account](#13-request-an-ongoing-digital-transfer-account)
+- [3.1 Validation](#31-validation)
+- [3.2 Ingest](#32-ingest)
 
-## 1.1 Request a deposit folder
-The Archives manage deposit folders for digital transfer on its SFU Vault space. To request a deposit folder, contact the Archives directly (tel. 2-2380 or email archives@sfu.ca or moveit@sfu.ca).
+##  3.1 Validation
+**Validation** is the processing of determining whether or not to accept a transfer. It answers two questions:
+1. Was the transmission of data successful? Yes = no data was lost or corrupted during upload.
+1. Are the contents of the transfer acceptable for permanent preservation in the Archives? Yes = the records have enduring archival value.
 
-Note that the Archives tries to limit the number of transfer contacts per department or organization in order to centralize the transfer process for a given unit.
-- This is to avoid duplication of effort, reduce the likelihood that the same materials will be sent by different people, and facilitate communications relating to transfers, holdings, retrievals, and changes to tools and processes.
+To validate data transmission, the Archives uses a tool called [Bagger](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/bagger.md) to compare pre- and post-transfer checksums on each file to verify data integrity. The Archives also runs a virus scan during this stage to identify any infected files or malware.
+- For more information about checksums, see [Appendix B, Anatomy of the Transfer Package](../appendices/b-anatomy-transfer-pacakge.md#checksums).
 
-On approval, the Archives creates the deposit folder and sends you a confirmation email with the folder name (typically `Deposit_DeptOrgName`) and a link.
+To validate the contents of the transfer, an archivist will typically inspect and review the files themselves (or at least a sample). There are various reasons the Archives may reject a transfer on the basis of its contents. For example:
+- The records do not match the description (e.g. they are described as "committee records" but are in fact financial receipts).
+- The records are scheduled for destruction rather than archival transfer.
+- The records were already previously transferred.
+- The files are encrypted or password-protected.
+- See the discussion in [section 2.1](02-transfer.md#21-identify-records-for-transfer) above for more information about records that are suitable or not suitable for archival transfer.
 
-## 1.2 Download SFU MoveIt
-<img align="right" width="400" src="../../screenshots/01-download-moveit.png">
+**The Archives will never simply reject a transfer without first contacting the sender to request clarification, explain our reasoning, or discuss options.**
 
-SFU MoveIt is a small, open-source desktop utility for packaging digital materials as standardized containers ("bags") that follow the [BagIt File Packaging Format](https://tools.ietf.org/html/rfc8493). It was developed by Alex Garnett, SFU Research Data Management & Systems Librarian.
-- For more information about the app, see the [SFU MoveIt page on the Archives' website](https://www.sfu.ca/archives/digital-preservation/sfu-moveit.html).
+## 3.2 Ingest
+Ingest is the process of committing your transfer to the Archives' digital repository for long-term preservation. An archivist registers the transfer as an **Accession**, assigns it a unique accession number, and processes the transfer through Archivematica, the Archives' digital preservation software.
 
-To download:
-- Go to the developer's [GitHub download page for the latest release](https://github.com/axfelix/moveit-electron/releases/tag/2.0.6).
-- Select the version for your operating system: MacOS = the `dmg` file, Windows = the `exe` file.
-- When download is complete, double-click the `dmg` or `exe` file and move the application icon to a location on your computer.
-- The app can be stored and run from any location on your machine, but Archives recommends storing it in your standard `Applications` folder (Mac) or `Programs` folder (Windows).
+Archivematica runs a number of actions on the files. Among other things, it:
+- Extracts any packages included in the transfer (e.g. uncompresses zip files).
+- Assigns a unique ID to each digital object.
+- Creates or checks previously created checksums for each object.
+- Sanitizes file names (removes any special characters that may cause problems).
+- Identifies file formats.
+- Extracts technical metadata.
 
-### Security warnings
-Note that you may get security warnings when you first open the app.
-- The Mac version is an Apple "signed" or certified app, but the first time you open it you may be prompted to confirm permissions to run the software.
-- With the Windows version, you may have to click through several security warnings to open the application the first time.
+Metadata and a log of all actions are structured according to the [PREMIS data standard](https://www.loc.gov/standards/premis/) and written to a [METS file](http://www.loc.gov/standards/mets/) added to the transfer package. At the end of this process, the package is moved to disk space in the **Backlog storage** component of the Archives' digital repository.
+- The Archives' storage spaces are provisioned and backed up by the university's [IT Services department](https://www.sfu.ca/itservices.html).
 
-### Uninstall
-To uninstall SFU MoveIt, simply drag the application icon to the trash/recycle bin.
-
-<br clear="all"/>
-
-## 1.3 Request an ongoing Digital Transfer Account
-With a one-off transfer, your access to the deposit folder will expire after the transfer is complete. If you will be regularly transferring digital records to the Archives, you should request an ongoing **Digital Transfer Account**. This provides you with continuing access to the deposit folder.
-
-Request an account by contacting the Archives directly or by completing and submitting the [online request form on the Archives website at the Digital Preservation > Digital transfer account page](https://www.sfu.ca/archives/digital-preservation/digital-transfer-account.html).
-
-On approval, you will no longer be required to contact the Archives in advance of a transfer, you simply access the deposit folder as needed.
-- If you have an SFU email address, the Archives can set up a share for you on the deposit folder.
-- With a share, you can install the SFU Vault desktop application on your computer so that the shared deposit folder (typically named `Deposit_DeptOrgName`) will appear as a folder in your local file system and syncs with the remote folder on Vault.
-- For more information on SFU Vault, see the [help and information pages maintained by SFU IT Services](https://www.sfu.ca/itservices/collaboration/sfu-vault.html).
-
-###### Last updated: Jan 19, 2021
-###### [< Previous: Introduction](00-introduction.md) | [Next: 2. Transfer >](02-transfer.md)
+###### Last updated: Jan 22, 2021
+###### [< Previous: 2. Transfer](02-transfer.md) | [Next: 4. Completion >](04-completion.md)

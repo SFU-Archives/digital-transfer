@@ -8,6 +8,11 @@ Standard transfer method (SFU MoveIt):
 - [Procedures for Departmental Staff and Donors](procedures/standard-producers/00-introduction.md)
 - [Procedures for Archives](procedures/standard-archives/00-introduction.md)
 
+Appendices:
+- [A. Digital Transfer Metadata](appendices/a-transfer-metadata.md)
+- [B. Anatomy of the Transfer Package](appendices/b-anatomy-transfer-package.md)
+- [C. Post-transfer](appendices/c-post-transfer.md)
+
 ## Guide
 [Transfer Scenarios](guide/transfer-scenarios.md)
 
@@ -22,7 +27,7 @@ Workflow diagrams:
 Procedures as single documents:
 - [Procedures for Archives (pdf; snapshot Jan 2021)](downloads/procedures-archives-full.pdf)
 
-###### Last updated: Jan 19, 2021
+###### Last updated: Jan 21, 2021
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
