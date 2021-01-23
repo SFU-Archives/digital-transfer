@@ -4,30 +4,32 @@ This site provides documentation for digital transfer at SFU Archives. The [Proc
 Please note that the site is a work in progress and will be updated as new material is added.
 
 ## Procedures
-Standard transfer method (SFU MoveIt):
+### Standard transfer method (SFU MoveIt)
 - [Procedures for Departmental Staff and Donors](procedures/standard-producers/00-introduction.md)
 - [Procedures for Archives](procedures/standard-archives/00-introduction.md)
 
-Appendices:
-- [A. Digital Transfer Metadata](appendices/a-transfer-metadata.md)
-- [B. Anatomy of the Transfer Package](appendices/b-anatomy-transfer-package.md)
-- [C. Post-transfer](appendices/c-post-transfer.md)
+### Appendices
+- [A. Digital Transfer Metadata](procedures/appendices/a-transfer-metadata.md)
+- [B. Anatomy of the Transfer Package](procedures/appendices/b-anatomy-transfer-package.md)
+- [C. Post-transfer](procedures/appendices/c-post-transfer.md)
 
 ## Guide
 [Transfer Scenarios](guide/transfer-scenarios.md)
 
 ## Downloads
-Checklists:
-- [Digital Transfer Checklist (for producers; pdf)](downloads/checklist-transfer.pdf)
-- [Digital Transfer Validation Checklist (for Archives; pdf)](downloads/checklist-validation.pdf)
+### Checklists
+- [Digital Transfer Checklist](downloads/checklist-transfer.pdf) – for producers (pdf)
+- [Digital Transfer Validation Checklist](downloads/checklist-validation.pdf) – for Archives' staff (pdf)
 
-Workflow diagrams:
-- [Standard Transfer Workflow (pdf)](downloads/workflow-standard.pdf)
+### Workflow diagrams
+- [Standard Transfer Workflow](downloads/workflow-standard.pdf) (pdf)
 
-Procedures as single documents:
-- [Procedures for Archives (pdf; snapshot Jan 2021)](downloads/procedures-archives-full.pdf)
+### Procedures as single documents
+PDF snapshots of GitHub pages
+- [Procedures for Departmental Staff and Donors](downloads/procedures-producers-full.pdf) (Jan 2021)
+- [Procedures for Archives](downloads/procedures-archives-full.pdf) (Jan 2021)
 
-###### Last updated: Jan 21, 2021
+###### Last updated: Jan 22, 2021
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 

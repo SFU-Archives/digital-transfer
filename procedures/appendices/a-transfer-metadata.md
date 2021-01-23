@@ -12,10 +12,11 @@ This guide describes each field.
 - Mandatory fields are indicated with an asterisk (*).
 
 ## Contact information
-These fields describe the person who is the **transfer contact**.
-- The contact is the person who is responsible for creating the package and the person the Archives will seek out for follow-up questions and clarifications.
+These fields describe the person who is the **transfer contact**. This is:
+- The person who is responsible for creating the package.
+- The person the Archives will seek out for follow-up questions and clarifications.
 
-The first time you open SFU MoveIt, **contact information** fields will be blank; subsequently it will default to whatever values were entered when the application was last used.
+The first time you open SFU MoveIt, **contact information** fields will be blank; subsequently it will default to whatever values you entered in your last session.
 
 ### Contact Name (*)
 Enter your name in any format, e.g. `FirstName LastName` or `LastName, FirstName`.
@@ -42,15 +43,15 @@ These fields describe the materials being transferred.
 
 ### Records Creator
 Enter the name of the department, organization, or person responsible for creating and maintaining the records.
-- For university records, give the full name of the unit (e.g. "Department of English" rather than just "English").
+- For university records, this should be the full name of the unit (e.g. "Department of English" rather than just "English").
 - For privately donated materials, this should be the same as the entity named in the Donation Agreement.
 
-Often the value in this field will be the same as the [Department / Organization](#department--organization) entered above, but they can be different. For example, your department (the unit for which the contact works) is **Student Services** but records transferred were created by the **Senate Committee on Undergraduate Studies** (SCUS).
+Often the value in this field will be the same as the [Department / Organization](#department--organization) entered above, but they can be different. For example, your department (the unit for which you works) is **Student Services** but records transferred were created by the **Senate Committee on Undergraduate Studies** (SCUS).
 - Here one body (Student Services) is acting as the secretariat for a different body (SCUS) that created the records.
 - `Department / Organization` = "Student Services"; `Records Creator` = "Senate Committee on Undergraduate Studies".
 
 ### RRSDA Number
-Enter the Records Retention Schedule and Disposal Authority (RRSDA) that applies to the records. **Use for SFU transfers only.**
+**Use for SFU transfers only:** enter the Records Retention Schedule and Disposal Authority (RRSDA) that applies to the records.
 - Private donors should leave this field blank.
 - Enter the RRSDA number in the form `YYYY-NNN` (e.g. "1999-003").
 - Note that the 4-digit prefix in an RRSDA number just represents the year in which the schedule was drafted. It has no significance for application, i.e. as long as the RRSDA is **in force** it applies to records created in any given year.
@@ -69,13 +70,13 @@ Pick the start and end years for the range covered by the records, oldest to mos
 
 ### Records Description
 Enter any descriptive information that will help the Archives understand what the records are and how they were created and maintained.
--	**If the records contain known confidential or sensitive personal information**, indicate this in the description.
+-	**If the records contain known confidential or sensitive personal information, indicate this in the description.**
 
 ### Other Metadata Available?
 This refers to other documentation that contains information about the records in your transfer.
 - Examples include indexes and content listings; descriptive information or metadata stored in databases or other systems; systems documentation and manuals.
 -	Leave this field blank if not applicable.
-- If you do list other metadata here, an archivist will follow up with you to discuss whether it should be transferred and if so, how.
+- If you do list other metadata here, an archivist will follow up with you to discuss whether it should be transferred as well and if so, how.
 
-###### Last updated: Jan 21, 2021
+###### Last updated: Jan 22, 2021
 ###### [Next – Appendix B. Anatomy of the transfer package >](b-anatomy-transfer-package.md)
