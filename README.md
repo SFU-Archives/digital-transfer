@@ -3,29 +3,23 @@ This site provides documentation for digital transfer at SFU Archives. The [Proc
 
 Please note that the site is a work in progress and will be updated as new material is added.
 
-## Procedures
-### Standard transfer method (SFU MoveIt)
+## Contents
+Standard Transfer Procedures (SFU MoveIt):
 - [Procedures for Departmental Staff and Donors](procedures/standard-producers/00-introduction.md)
 - [Procedures for Archives](procedures/standard-archives/00-introduction.md)
+- [Appendix A. Digital Transfer Metadata](procedures/appendices/a-transfer-metadata.md)
+- [Appendix B. Anatomy of the Transfer Package](procedures/appendices/b-anatomy-transfer-package.md)
+- [Appendix C. Post-transfer](procedures/appendices/c-post-transfer.md)
 
-### Appendices
-- [A. Digital Transfer Metadata](procedures/appendices/a-transfer-metadata.md)
-- [B. Anatomy of the Transfer Package](procedures/appendices/b-anatomy-transfer-package.md)
-- [C. Post-transfer](procedures/appendices/c-post-transfer.md)
+Guide:
+-[Transfer Scenarios](guide/transfer-scenarios.md)
 
-## Guide
-[Transfer Scenarios](guide/transfer-scenarios.md)
-
-## Downloads
-### Checklists
+Downloads:
 - [Digital Transfer Checklist](downloads/checklist-transfer.pdf) – for producers (pdf)
 - [Digital Transfer Validation Checklist](downloads/checklist-validation.pdf) – for Archives' staff (pdf)
+- [Standard Transfer Workflow Diagram](downloads/workflow-standard.pdf) (pdf)
 
-### Workflow diagrams
-- [Standard Transfer Workflow](downloads/workflow-standard.pdf) (pdf)
-
-### Procedures as single documents
-PDF snapshots of GitHub pages
+Procedures as single documents (pdf snapshot of GitHub pages):
 - [Procedures for Departmental Staff and Donors](downloads/procedures-producers-full.pdf) (Jan 2021)
 - [Procedures for Archives](downloads/procedures-archives-full.pdf) (Jan 2021)
 
