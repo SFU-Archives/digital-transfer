@@ -47,4 +47,4 @@ Following deposit, the Archives runs a tool ([Bagger](https://github.com/SFU-Arc
 - The checksums also provide a check against the Archives itself inadvertently changing any data during the inspection of the files during the [validation phase](../standard-archives/03-validation.md).
 
 ###### Last updated: Jan 22, 2021
-###### [< Previous – Appendix A. Digital Transfer Metadata](a-transfer-metadata.md) `|` [Next – Appendic C. Post-transfer](c-post-transfer.md)
+###### [< Previous – Appendix A. Digital Transfer Metadata](a-transfer-metadata.md) `|` [Next – Appendic C. Post-transfer >](c-post-transfer.md)

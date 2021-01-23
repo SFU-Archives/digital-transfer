@@ -1,5 +1,5 @@
-###### [Digital Transfer](../../README.md) > [Standard Transfer: Procedures for Producers](00-introduction.md)
-###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md) `|` 5. Post-transfer
+###### [Digital Transfer](../../README.md)
+###### Standard Transfer `|` [Procedures for Producers](../standard-producers/00-introduction.md) `|` [Procedures for Archives](../standard-archives/00-introduction.md)
 
 # Appendix C. Post-transfer
 From the standpoint of the producer sending records to the Archives, a transfer is **complete** once the Archives has accessioned the records into its preservation system and assumed custody and control over them. For the Archives, however, this is just the first step in a longer process of preserving the records and making them accessible over time. This page briefly describes what happens to the records post-transfer and how producers can access them.
@@ -10,7 +10,7 @@ From the standpoint of the producer sending records to the Archives, a transfer 
 - [Retrieval requests](#retrieval-requests)
 
 ## Backlog
-<img align="right" width="350" src="../../screenshots/app-archivematica-backlog.png">
+<img align="right" width="400" src="../../screenshots/app-archivematica-backlog.png">
 
 On completion of a transfer, the Archives sends the transfer package to **backlog storage**. The records remain in backlog until an archivist:
 - Completes preservation processing in Archivematica.

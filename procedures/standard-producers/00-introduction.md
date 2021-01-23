@@ -1,7 +1,7 @@
 ###### [Digital Transfer](../../README.md) > Standard Transfer: Procedures for Producers
 ###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md)
 
-# Standard Transfer Method: Procedures for Producers
+# Standard Transfer: Procedures for Producers
 ###### Status: under development
 These procedures are written for SFU staff and private donors ("producers") who wish to transfer their digital records to the Archives. In the workflow diagram below, actions and decision points by producers are shaded green.
 
