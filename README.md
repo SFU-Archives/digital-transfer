@@ -12,7 +12,7 @@ Standard Transfer Procedures (SFU MoveIt):
 - [Appendix C. Post-transfer](procedures/appendices/c-post-transfer.md)
 
 Guide:
--[Transfer Scenarios](guide/transfer-scenarios.md)
+- [Transfer Scenarios](guide/transfer-scenarios.md)
 
 Downloads:
 - [Digital Transfer Checklist](downloads/checklist-transfer.pdf) – for producers (pdf)
