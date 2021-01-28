@@ -1,15 +1,15 @@
-###### [Digital Transfer](../../README.md)
-###### Standard Transfer `|` [Procedures for Producers](../standard-producers/00-introduction.md) `|` [Procedures for Archives](../standard-archives/00-introduction.md)
+###### [Digital Transfer](../../README.md) > Standard Transfer `|` [Procedures for Producers](../standard-producers/00-introduction.md) `|` [Procedures for Archives](../standard-archives/00-introduction.md)
+###### [Appendices: Overview](overview.md) `|` [A. Transfer Metadata](a-transfer-metadata.md) `|` [B. Anatomy of the Transfer Package](b-anatomy-transfer-package.md) `|` C. Post-transfer
 
 # Appendix C. Post-transfer
-From the standpoint of the producer sending records to the Archives, a transfer is **complete** once the Archives has accessioned the records into its preservation system and assumed custody and control over them. For the Archives, however, this is just the first step in a longer process of preserving the records and making them accessible over time. This page briefly describes what happens to the records post-transfer and how producers can access them.
+From the standpoint of the producer sending records to the Archives, a [transfer is complete](../standard-producers/05-completion.md) once the Archives has accessioned the records into its preservation system and assumed custody and control over them. For the Archives, however, this is just the first step in a longer process of preserving the records and making them accessible over time. This page briefly describes what happens to the records post-transfer. It also provides [instructions for requesting access](#retrieval-requests) to files you have transferred.
 
 ## Contents
-- [Backlog](#backlog)
+- [Accession to backlog](#accession-to-backlog)
 - [Archival processing](#archival-processing)
 - [Retrieval requests](#retrieval-requests)
 
-## Backlog
+## Accession to backlog
 <img align="right" width="400" src="../../screenshots/app-archivematica-backlog.png">
 
 On completion of a transfer, the Archives sends the transfer package to **backlog storage**. The records remain in backlog until an archivist:
@@ -30,7 +30,7 @@ During processing, an archivist:
 - Creates (through Archivematica) the finalized AIP and sends it to offline storage.
 - Assigns files to new or existing records series in the aggregate holdings ("fonds") of the records creator.
 - Creates / updates finding aid descriptions in [SFU AtoM](https://atom.archives.sfu.ca).
-- Reviews materials for access and copyright restrictions to determine whether or not the files themselves can be directly made available to the public through SFU AtoM.
+- Reviews materials for access and copyright restrictions to determine whether or not the files themselves can be made available to the public directly through SFU AtoM.
 
 ## Retrieval requests
 To obtain a copy of digital files previously transferred to Archives, it is a good practice to first check the online finding aid in [SFU AtoM](https://atom.archives.sfu.ca), as a copy may be directly available online.
@@ -42,8 +42,8 @@ Many files, however, will not be available online because:
 
 If any of these situations apply, contact the Archives to request a retrieval.
 - Refer to the [Transfer Completed Notices](../standard-producers/04-completion.md#41-receive-completion-notice) you received from Archives to locate the file in an accession.
-- Email `moveit@sfu.ca` to request a copy, providing the `File title`and `Accession number`.
-- An archivist will consult with you to determine the best method of delivery (e.g. via SFU Vault)/
+- Email `archives@sfu.ca` or `moveit@sfu.ca` to request a copy, providing the `File title`and `Accession number`.
+- An archivist will consult with you to determine the best method of delivery (e.g. via SFU Vault).
 
 Do not "return" your copy when you no longer need it for reference.
 - The Archives retains the original file; what it has sent you is a copy.
@@ -51,5 +51,4 @@ Do not "return" your copy when you no longer need it for reference.
 - There may be situations where you should destroy the copy when no longer needed (e.g. if it contains sensitive personal or confidential information); consult with an archivist if in doubt.
 -	If you do keep a copy, revise it and / or integrate into your active records, it now becomes a new record.
 
-###### Last updated: Jan 22, 2021
-###### [< Previous – Appendix B. Anatomay of the Transfer Package](b-anatomy-transfer-package.md)
+###### Last updated: Jan 28, 2021

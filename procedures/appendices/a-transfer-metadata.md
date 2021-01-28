@@ -1,22 +1,20 @@
-###### [Digital Transfer](../../README.md)
-###### Standard Transfer `|` [Procedures for Producers](../standard-producers/00-introduction.md) `|` [Procedures for Archives](../standard-archives/00-introduction.md)
+###### [Digital Transfer](../../README.md) > Standard Transfer `|` [Procedures for Producers](../standard-producers/00-introduction.md) `|` [Procedures for Archives](../standard-archives/00-introduction.m
+###### [Appendices: Overview](overview.md) `|` A. Transfer Metadata `|` [B. Anatomy of the Transfer Package](b-anatomy-transfer-package.md) `|` [C. Post-transfer](c-post-transfer.md)
 
 # Appendix A. Digital Transfer Metadata
 <img align="right" width="400" src="../../screenshots/02-sfu-moveit.png">
 
-SFU MoveIt requires users to enter transfer information into a number of fields, capturing the data as part of the transfer package.
-- See the producer procedures, [step 2.3](../standard-producers/02-transfer.md#23-create-a-transfer-package-with-sfu-moveit).
-
-This guide describes each field.
+SFU MoveIt requires users to enter transfer information into a number of fields. It captures the data as part of the transfer package, writing it to the `bag-info.txt` file. This page describes each field.
+- For workflow, see the producer procedures, [step 2.3](../standard-producers/02-transfer.md#23-create-a-transfer-package-with-sfu-moveit).
 - Always complete each field that is applicable.
 - Mandatory fields are indicated with an asterisk (*).
 
 ## Contact information
-These fields describe the person who is the **transfer contact**. This is:
+A set of five fields describes the person who is the **transfer contact**. This is:
 - The person who is responsible for creating the package.
-- The person the Archives will seek out for follow-up questions and clarifications.
+- The person whom the Archives will seek out for follow-up questions and clarifications.
 
-The first time you open SFU MoveIt, **contact information** fields will be blank; subsequently it will default to whatever values you entered in your last session.
+The first time a user opens SFU MoveIt, **contact information** fields will be blank; subsequently the app saves the last-entered data for the next session.
 
 ### Contact Name (*)
 Enter your name in any format, e.g. `FirstName LastName` or `LastName, FirstName`.
@@ -26,12 +24,12 @@ Enter your name in any format, e.g. `FirstName LastName` or `LastName, FirstName
 Give your official job title.
 
 ### Department / Organization
-Provide the name of your SFU department or external organization.
+Provide the name of your SFU department (for university records) or organization (for privately donated records).
 - Use the full name, e.g. "Department of Geography" rather than just "Geography".
 
 ### Email Address (*)
 Provide your business contact email.
-- For SFU staff transferring university records, this should always be the `@sfu` email address.
+- For SFU staff transferring university records, this should always be your `@sfu` email address.
 
 ### Telephone
 Give the phone number at which you can be reached during business hours.
@@ -39,14 +37,14 @@ Give the phone number at which you can be reached during business hours.
 - For SFU contacts, it is fine to give the abbreviated number, e.g. 2-2380.
 
 ## Records description
-These fields describe the materials being transferred.
+The remaining fields describe the materials being transferred.
 
 ### Records Creator
 Enter the name of the department, organization, or person responsible for creating and maintaining the records.
 - For university records, this should be the full name of the unit (e.g. "Department of English" rather than just "English").
 - For privately donated materials, this should be the same as the entity named in the Donation Agreement.
 
-Often the value in this field will be the same as the [Department / Organization](#department--organization) entered above, but they can be different. For example, your department (the unit for which you works) is **Student Services** but records transferred were created by the **Senate Committee on Undergraduate Studies** (SCUS).
+Often the value in this field will be the same as the [Department / Organization](#department--organization) entered above, but they can be different. For example, your department (the unit for which you work) is **Student Services** but the records themselves were created by the **Senate Committee on Undergraduate Studies** (SCUS).
 - Here one body (Student Services) is acting as the secretariat for a different body (SCUS) that created the records.
 - `Department / Organization` = "Student Services"; `Records Creator` = "Senate Committee on Undergraduate Studies".
 
@@ -73,10 +71,9 @@ Enter any descriptive information that will help the Archives understand what th
 -	**If the records contain known confidential or sensitive personal information, indicate this in the description.**
 
 ### Other Metadata Available?
-This refers to other documentation that contains information about the records in your transfer.
+This refers to other documentation you may have that contains information about the records in your transfer.
 - Examples include indexes and content listings; descriptive information or metadata stored in databases or other systems; systems documentation and manuals.
 -	Leave this field blank if not applicable.
 - If you do list other metadata here, an archivist will follow up with you to discuss whether it should be transferred as well and if so, how.
 
-###### Last updated: Jan 22, 2021
-###### [Next – Appendix B. Anatomy of the transfer package >](b-anatomy-transfer-package.md)
+###### Last updated: Jan 28, 2021

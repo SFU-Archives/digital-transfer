@@ -1,5 +1,5 @@
-###### [Digital Transfer](../../README.md)
-###### Standard Transfer `|` [Procedures for Producers](../standard-producers/00-introduction.md) `|` [Procedures for Archives](../standard-archives/00-introduction.md)
+###### [Digital Transfer](../../README.md) > Standard Transfer `|` [Procedures for Producers](../standard-producers/00-introduction.md) `|` [Procedures for Archives](../standard-archives/00-introduction.md)
+###### [Appendices: Overview](overview.md) `|` [A. Transfer Metadata](a-transfer-metadata.md) `|` B. Anatomy of the Transfer Package `|` [C. Post-transfer](c-post-transfer.md)
 
 # Appendix B. Anatomy of the Transfer Package
 SFU MoveIt creates a transfer package as a single zip file on the user's desktop. This page describes how the package is structured.
@@ -17,7 +17,7 @@ Unzip the file to see how the bag is structured.
 - It comprises four "tag" `.txt` files, plus a `data` folder that contains the transfer contents.
 
 `bag-info.txt`
-- Captures data supplied by the user on the SFU MoveIt interface (in [step 2.2 of the producer procedures](../standard-producers/02-transfer.md#23-create-a-transfer-package-with-sfu-moveit)).
+- Captures data supplied by the user on the SFU MoveIt interface (in [step 2.3 of the producer procedures](../standard-producers/02-transfer.md#23-create-a-transfer-package-with-sfu-moveit)).
 - Includes some auto-generated metadata, e.g. `Package-Time`.
 - Field names follow the conventions of the BagIt specification.
 
@@ -43,8 +43,9 @@ SFU MoveIt creates **checksums** for each file included in your transfer and rec
 - A checksum functions as a kind of **digital fingerprint**: any change to the bitstream will result in a completely different value when the same algorithm is applied.
 
 Following deposit, the Archives runs a tool ([Bagger](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/bagger.md)) that compares the files' pre-transfer checksums (stored in the `manifest` file) with checksums that Bagger generates post-transfer.
--	In this way the Archives can identify any files that were corrupted during transmission; in that event, the Archives will contact the producer and ask them to re-send.
-- The checksums also provide a check against the Archives itself inadvertently changing any data during the inspection of the files during the [validation phase](../standard-archives/03-validation.md).
+- If the values are different, something happened to the data (corruption or loss) during transmission.
+-	In the event a checksum validation fail, the Archives will contact the producer and ask them to re-send.
 
-###### Last updated: Jan 22, 2021
-###### [< Previous – Appendix A. Digital Transfer Metadata](a-transfer-metadata.md) `|` [Next – Appendic C. Post-transfer >](c-post-transfer.md)
+Checksums also provide a check against the Archives itself inadvertently changing any data during the inspection of the files during the [validation phase](../standard-archives/03-validation.md).
+
+###### Last updated: Jan 28, 2021
