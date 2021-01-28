@@ -2,7 +2,7 @@
 ###### Appendices `|` [A. Transfer Metadata](a-transfer-metadata.md) `|` [B. Anatomy of the Transfer Package](b-anatomy-transfer-package.md) `|` [C. Post-transfer](c-post-transfer.md)
 
 # Appendices: Overview
-There are separate, point-of-view transfer procedures for SFU departmental staff and private donors ("producers") and for archivists. These appendices contain information that may be useful for both.
+Transfer procedures are described in separate, point-of-view documents for [SFU departmental staff and private donors](../standard-producers/00-introduction.md) ("producers") and for [archivists](../standard-archives/00-introduction.md). These appendices contain information that may be useful for both.
 
 ## Contents
 - [Appendix A. Transfer Metadata](a-transfer-metadata.md)
