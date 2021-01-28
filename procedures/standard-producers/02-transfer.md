@@ -1,7 +1,7 @@
 ###### [Digital Transfer](../../README.md) > [Standard Transfer: Procedures for Producers](00-introduction.md)
-###### [1. Pre-Transfer](01-pre-transfer.md) `|` 2. Transfer `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md)
+###### [1. Pre-Transfer](01-pre-transfer.md) `|` 2. Transfer `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md) `|` [Appendices](../appendices/overview.md)
 
-# 1. Transfer
+# 2. Transfer
 <img align="right" width="350" src="../../screenshots/02-transfer.png">
 
 The **transfer phase** begins when you are ready to send digital records to the Archives. You [identify](#21-identify-records-for-transfer) and [gather the records](#22-create-transfer-folders) for transfer, [package them with SFU MoveIt](#23-create-a-transfer-package-with-sfu-moveit), and [upload the transfer package](#24-upload-the-transfer-package-to-sfu-vault) to the deposit folder on SFU Vault. For handy reference, download and retain the [Digital Transfer Checklist (pdf)](../../downloads/checklist-transfer.pdf).
@@ -33,13 +33,18 @@ Not all digital records can or should be transferred to the Archives for permane
 Determine whether there is a **Records Retention Schedule and Disposal Authority** (RRSDA) that applies to the records.
 - University records can only be transferred to Archives if there is an existing RRSDA that applies to them; for a list of all RRSDAs, see the online [Directory of University Records (DUR)](http://www.sfu.ca/archives2/dur/rrsdas.html).
 - Your records may not be eligible for transfer if your department is not the Office of Primary Responsibility (OPR) for them; i.e. your records are copies of the authoritative records that will be transferred by another department.
+
+Confirm that the RRSDA's "final disposition" is **archival**.
 - Your records will not be eligible for transfer if they are scheduled for destruction and should be destroyed, not transferred, at the end of the retention period.
 
 Determine whether the total retention period has expired.
 - Digital records should normally be sent to Archives only after the expiry of the total retention period set out in the RRSDA (= **active** + **semi-active** retention periods).
-- This differs from the situation with paper records, which may be sent to the University Records Centre (URC) for offsite storage at the end of their active retention period.
+- This differs from the situation with paper records, which may be sent to the University Records Centre (URC) for **semi-active** offsite storage at the end of their **active** retention period.
 - The Archives does not currently provide semi-active storage for digital records.
-- In some circumstances the Archives will accept digital records before their semi-active expiry date, but it will treat them as archival in those cases (i.e. fully under the control of the Archives rather than the department). Requests are handled on a case-by-case basis in consultation with the department.
+
+In some circumstances the Archives will accept digital records before their semi-active expiry date.
+- In those cases, the Archives will treat the records as **archival**, i.e. fully under the control of the Archives rather than the department.
+- Requests are handled on a case-by-case basis in consultation with the department.
 
 ### Private donors
 Determine whether there is an existing Donation Agreement that covers the records.
@@ -47,11 +52,11 @@ Determine whether there is an existing Donation Agreement that covers the record
 - Consult the [Donor resources section](https://www.sfu.ca/archives/resources/donor-resources.html) of the Archives' website or contact an archivist for more information about donating materials to SFU Archives.
 
 ### File formats
-Be aware of the files formats of the materials you are transferring and whether or not they are currently supported by the Archives' preservation program.
+You should be aware of the file formats of the records you are transferring and whether or not those formats are currently supported by the Archives' preservation program.
 
-In order to ensure the long-term accessibility of digital objects, the Archives develops a preservation and access plan for each file format we take in; these plans are embodied in the [Format Policy Registry (FPR)](https://www.sfu.ca/content/dam/sfu/archives/PDFs/DigitalPreservation/LinksResources/FormatPolicyRegistry.pdf), along with recommendations for **Preferred** or **Acceptable** formats.
-- If the file formats you wish to transfer are not on the FPR or appear there under `Level of support` as "Watch" or "Bit-level" it means that the Archives cannot presently guarantee that files in those formats will continue to be accessible (renderable) into the future.
-- You can still transfer non-preferred formats, but you should consult with an SFU archivist to discuss the implications. See also the Explanations section of the FPR for more detail.
+In order to ensure the long-term accessibility of digital materials, the Archives develops a preservation and access plan for each file format we take in; these plans are embodied in the [Format Policy Registry (FPR)](https://www.sfu.ca/content/dam/sfu/archives/PDFs/DigitalPreservation/LinksResources/FormatPolicyRegistry.pdf), along with recommendations for **Preferred** or **Acceptable** formats.
+- If the file formats you wish to transfer are not on the FPR or appear there under `Level of support` as "Watch" or "Bit-level" it means that the Archives cannot presently guarantee that files in those formats will continue to be accessible (renderable) in the future.
+- You can still transfer non-preferred formats, but you should consult with an SFU archivist to discuss the implications. See also the **Explanations** section of the FPR for more detail.
 
 ## 2.2 Create transfer folder(s)
 Gather the materials for transfer.
@@ -59,12 +64,12 @@ Gather the materials for transfer.
 ### Transfer folder
 <img align="right" width="400" src="../../screenshots/02-cyberduck-timestamps.png">
 
-Create a transfer folder on your local machine to collect all files you will be transferring.
+Create a transfer folder on your local machine to collect all folders and files you will be transfer.
 - This step segregates the material for transfer from other records that will remain in your active system: this will facilitate their eventual deletion at the end of the transfer process.
 
-When moving folders and files **it is critical not to overwrite the timestamps for the dates of file creation and modification**.
+When moving folders and files **it is critical not to overwrite the timestamps for dates of file creation and modification**.
 - The `modified date` of a file provides useful contextual information that should be preserved.
-- If you copy files from an external server or hard drive onto your computer, `created` and `modified` dates will likely be overwritten with the date of the copying (from the standpoint of your computer, this is now the date of creation).
+- If you copy files from an external server or hard drive onto your computer, `created` and `modified` dates will likely be overwritten with the date of the copying (from the standpoint of your computer, the date of copying is the date of creation).
 - To avoid this, use an FTP client (e.g. Cyberduck) to move files; change the settings in the app's preferences so that it preserves timestamps.
 - In Cyberduck for example, you do this by navigating to `Preferences > Transfers > Timestamps` and checking the box `Preserve modification dates` for both uploads and downloads.
 
@@ -72,7 +77,7 @@ All materials for a single transfer must be placed inside one folder.
 - When packaging materials with SFU MoveIt (in [step 2.3 below](#23-create-a-transfer-package-with-sfu-moveit)), you will be prompted to select a folder (not an individual file), and you can only select one folder (rather than make multiple selections).
 - It is fine to include sub-folders in the transfer folder.
 - When grouping materials into a single folder, leave files nested in their original folder / sub-folder hierarchies whenever possible.
-- The original directory structure conveys important context for the files and it will be lost if the directory is arbitrarily flattened out.
+- The original directory structure conveys important contextual information about the files and it will be lost if the directory is arbitrarily flattened out.
 
 ### Passwords and encryption
 Remove any passwords or encryption on files before transfer.
@@ -84,48 +89,50 @@ Remove any passwords or encryption on files before transfer.
 Determine the number of transfer folders / packages you will need.
 - You can structure your transfer as one large package or break it down into as many separate packages as you like.
 
-There are a number of situations in which you might want to create multiple transfer packages. For example when:
+There are a number of situations in which you might want to create multiple transfer packages. Examples:
 - You are working on a transfer project on and off over several weeks and you want to push things out as you go.
 - Different persons are responsible for different parts of the transfer.
 - Different retention schedules (RRSDAs) apply to different parts of the transfer; materials covered by different RRSDAs must be packaged separately (1 RRSDA = 1 transfer folder).
 - File sizes are very large (e.g. audio and video materials) and you want to break up the transfer into several parts.
 
 ### Large transfers
-In general it is fine to use SFU MoveIt to create large packages (up to 10 GB) and upload them to SFU Vault. But the larger the transfer package, the greater the processing time for packaging (for SFU MoveIt) and the longer the upload time (for SFU Vault).
+In general it is fine to use SFU MoveIt to create large packages (up to 10 GB) and upload them to SFU Vault. But the larger the transfer folder, the greater the processing time for packaging (for SFU MoveIt) and the longer the upload time (for SFU Vault).
 - A single transfer folder cannot exceed 10 GB.
+- Packaging and upload times depend on the resources of your computer and the speed of your internet connection respectively.
 - **For optimum processing and upload speeds, we advise keeping folder size to under 2 GB.**
 
 It will not always be feasible to keep transfer folder size below these thresholds, e.g. if you are transferring audio-visual materials.
-- You should still package the materials with SFU MoveIt as described in the next section, but there may be alternatives transfer methods (e.g. copy to an external drive for pick-up or delivery), rather than upload to SFU Vault.
+- You should still package the materials with SFU MoveIt as described in the next section, but there may be better alternatives than SFU Vault for transfer.
+- E.g. copy the transfer package to an external drive for pick-up or delivery.
 - Consult with an archivist about the best transfer method for packages larger than 2 GB.
 
 ## 2.3 Create a transfer package with SFU MoveIt
 <img align="right" width="400" src="../../screenshots/02-sfu-moveit.png">
 
 Use SFU MoveIt to create the transfer package.
-- Double-click the `sfu-moveit` application icon to open the utility.
+
+Open the app by double-clicking the `sfu-moveit` application icon.
 
 Enter information about the transfer in the fields provided.
-- [Appendix A, Transfer metadata](appendix#a-transfer-metadata) describes fields in more detail.
-- Note that your contact information will default to whatever values were entered in your previous session.
+- [Appendix A, Transfer metadata](../appendices/a-transfer-metadata.md) describes fields in more detail.
+- Note that the first time you open SFU MoveIt, your contact information fields will be blank; subsequently the values from your previous session will be saved and entered as the default.
 
 Click the `Create Transfer Package` button.
 - You will be prompted to select the target transfer folder.
-- You can only select one transfer folder per package (but there is no limit to the number of sub-folders it may contain); see the section above on [How many transfer folders?](#how-many-transfer-folders).
+- You can only select one transfer folder per package (but there is no limit to the number of sub-folders it may contain); see the section above on [How many transfer folders?](#how-many-transfer-folders)
 
 SFU MoveIt will display a notification message when it has completed packaging.
 - Find the transfer package on your desktop as a single zip file.
-- The name of the zip file is based on the data your entered as the `Transfer title`.
-- [Appendix B, Anatomy of the transfer package](appendix/#b-anatomy-of-the-transfer-package) provides more information about the transfer package and its structure.
-- Note that the transfer package is a **copy** of the target transfer folder; the original folder and files are left in place.
+- The name of the zip file is based on the value you entered as the `Transfer title` (**not** on the transfer folder name).
+- [Appendix B, Anatomy of the transfer package](../appendices/b-anatomy-transfer-package.md) provides more information about the transfer package and its structure.
+- Note that the transfer package is a **copy** of the target transfer folder; the original target folder and files are left in place.
 
 ## 2.4 Upload the transfer package to SFU Vault
-
-Upload the transfer package (zip file) to the deposit folder you were assigned in step 1.1 above ([Request a deposit folder](01-pre-transfer.md#11-request-a-deposit-folder)).
-- The deposit folder is typically named `Deposit_DeptOrganizationName`.
+Upload the transfer package (zip file) to the deposit folder you were assigned in step 1.1 above ([Request a deposit folder](01-pre-transfer.md#11-request-a-deposit-folder)). How you access this folder depends on whether or not you have an ongoing **Digital Transfer Account** and whether you are connecting to Vault via the desktop or web version.
 
 ### SFU Vault desktop version
 If you have a [Digital Transfer Account](01-pre-transfer.md#13-request-an-ongoing-digital-transfer-account) and you have installed the desktop version of SFU Vault, the deposit folder should appear in the directory system on your local computer (accessible via Windows File Explorer or Mac Finder).
+- The deposit folder is typically named `Deposit_<<OrgDeptName>>`.
 
 Drag the transfer package to the deposit folder.
 - The application will synchronize your local folder with the deposit folder on Vault.
@@ -134,27 +141,29 @@ Drag the transfer package to the deposit folder.
 - For troubleshooting consult the [SFU Vault help pages](https://www.sfu.ca/itservices/collaboration/sfu-vault.html) maintained by ITS.
 
 ### SFU Vault web version with transfer account
+<img align="right" width="400" src="../../screenshots/02-sfu-vault.png">
+
 If you have a [Digital Transfer Account](01-pre-transfer.md#13-request-an-ongoing-digital-transfer-account) but you have not installed the desktop version of SFU Vault, access your deposit folder via your web browser.
 
-Open the url [https://vault.sfu.ca].
+Open the url https://vault.sfu.ca.
 - Enter your SFU computing credentials (account name and password).
 - In the sidebar along the left, click the `Shared with you` link.
 - Click the deposit folder that will appear in the list.
 - Drag the transfer package to the folder or use the upload icon.
 - Upload may take some time for large file sizes.
-- Archives recommends keeping transfers to under 2 GB per package; up to 10 GB is possible, but upload times will be long (see the discussion above, [How many transfer folders?](#how-many-transfer-folders).
+- Archives recommends keeping transfers to under 2 GB per package; up to 10 GB is possible, but upload times will be long (see the discussion above, [How many transfer folders?](#how-many-transfer-folders)).
 
 ### SFU Vault web version with no transfer account
 If you not have a [Digital Transfer Account](01-pre-transfer.md#13-request-an-ongoing-digital-transfer-account), access your one-time deposit folder via your web browser.
 - Open the url link you received from the Archives in [step 1.1 above](01-pre-transfer.md#11-request-a-deposit-folder).
-- Drag the zip file to the folder or use the upload icon to copy the transfer packager to the deposit folder.
+- Drag the zip file to the folder or use the upload icon to copy the transfer package to the deposit folder.
 - See the [note above](#sfu-vault-web-version-with-transfer-account) for large file sizes.
 
 ### Notification
 An archivist will send you an email confirming receipt of your transfer.
 - The Archives receives automatic notification from SFU Vault whenever new files have been added to a deposit folder, but there can be a time lag.
-- **If you do not receive a confirmation email within several days of your deposit, please email the Archives directly (moveit@sfu.ca)** it may indicate problems with the automated notice system.
+- **If you do not receive a confirmation email within several days of your deposit, please email the Archives directly** (moveit@sfu.ca); it may indicate a problem with the automated notice system.
+- Do not re-send the transfer; wait until you hear back from an archivist.
 
-
-###### Last updated: Jan 22, 2021
+###### Last updated: Jan 28, 2021
 ###### [< Previous: 1. Pre-transfer](01-pre-transfer.md) | [Next: 3. Validation / Ingest >](03-validation-ingest.md)

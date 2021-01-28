@@ -1,5 +1,5 @@
 ###### [Digital Transfer](../../README.md) > Standard Transfer: Procedures for Producers
-###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md)
+###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation / Ingest](03-validation-ingest.md) `|` [4. Completion](04-completion.md) `|` [Appendices](../appendices/overview.md)
 
 # Standard Transfer: Procedures for Producers
 ###### Status: under development
@@ -34,5 +34,8 @@ For the same process from the Archives point of view, see [Standard Transfer Met
 - [B. Anatomy of the Transfer Package](../appendices/b-anatomy-transfer-package.md)
 - [C. Post-transfer](../appendices/c-post-transfer.md)
 
-###### Last updated: Jan 22, 2021
+**Download**
+- Download the full procedures as a [single pdf](../../downloads/procedures-producers.pdf) (snapshot created Jan 28, 2021).
+
+###### Last updated: Jan 28, 2021
 ###### [Next: 1. Pre-transfer >](01-pre-transfer.md)
