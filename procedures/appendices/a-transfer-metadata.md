@@ -1,5 +1,5 @@
-###### [Digital Transfer](../../README.md) > Standard Transfer `|` [Procedures for Producers](../standard-producers/00-introduction.md) `|` [Procedures for Archives](../standard-archives/00-introduction.m
-###### [Appendices: Overview](overview.md) `|` A. Transfer Metadata `|` [B. Anatomy of the Transfer Package](b-anatomy-transfer-package.md) `|` [C. Post-transfer](c-post-transfer.md)
+###### [Digital Transfer](../../README.md) > Standard Transfer `|` [Procedures for Producers](../standard-producers/00-introduction.md) `|` [Procedures for Archives](../standard-archives/00-introduction.md)
+###### [Appendices](overview.md) `|` A. Transfer Metadata `|` [B. Anatomy of the Transfer Package](b-anatomy-transfer-package.md) `|` [C. Post-transfer](c-post-transfer.md)
 
 # Appendix A. Digital Transfer Metadata
 <img align="right" width="400" src="../../screenshots/02-sfu-moveit.png">

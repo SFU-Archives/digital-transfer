@@ -1,5 +1,5 @@
 ###### [Digital Transfer](../../README.md) > Standard Transfer `|` [Procedures for Producers](../standard-producers/00-introduction.md) `|` [Procedures for Archives](../standard-archives/00-introduction.md)
-###### [Appendices: Overview](overview.md) `|` [A. Transfer Metadata](a-transfer-metadata.md) `|` B. Anatomy of the Transfer Package `|` [C. Post-transfer](c-post-transfer.md)
+###### [Appendices](overview.md) `|` [A. Transfer Metadata](a-transfer-metadata.md) `|` B. Anatomy of the Transfer Package `|` [C. Post-transfer](c-post-transfer.md)
 
 # Appendix B. Anatomy of the Transfer Package
 SFU MoveIt creates a transfer package as a single zip file on the user's desktop. This page describes how the package is structured.

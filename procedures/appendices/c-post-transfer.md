@@ -1,5 +1,5 @@
 ###### [Digital Transfer](../../README.md) > Standard Transfer `|` [Procedures for Producers](../standard-producers/00-introduction.md) `|` [Procedures for Archives](../standard-archives/00-introduction.md)
-###### [Appendices: Overview](overview.md) `|` [A. Transfer Metadata](a-transfer-metadata.md) `|` [B. Anatomy of the Transfer Package](b-anatomy-transfer-package.md) `|` C. Post-transfer
+###### [Appendices](overview.md) `|` [A. Transfer Metadata](a-transfer-metadata.md) `|` [B. Anatomy of the Transfer Package](b-anatomy-transfer-package.md) `|` C. Post-transfer
 
 # Appendix C. Post-transfer
 From the standpoint of the producer sending records to the Archives, a [transfer is complete](../standard-producers/05-completion.md) once the Archives has accessioned the records into its preservation system and assumed custody and control over them. For the Archives, however, this is just the first step in a longer process of preserving the records and making them accessible over time. This page briefly describes what happens to the records post-transfer. It also provides [instructions for requesting access](#retrieval-requests) to files you have transferred.
