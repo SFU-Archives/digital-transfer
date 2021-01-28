@@ -35,7 +35,5 @@ For **university departments** deletion ensures that:
 - Decisions should be set out in the **Donation Agreement**, but as this is relatively new practice by the Archives older agreements will not explicitly include this.
 - If in doubt, contact the Archives to discuss.
 
-<br clear="all"/>
-
 ###### Last updated: Jan 28, 2021
-###### [< Previous: 3. Validation and ingest](03-validation-ingest.md) | [Next: Appendix A. Transfer Metadata >](../appendices/a-transfer-metadata.md)
+###### [< Previous: 3. Validation and ingest](03-validation-ingest.md)
