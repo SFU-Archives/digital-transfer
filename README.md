@@ -1,5 +1,5 @@
 # Digital Transfer
-This site provides documentation for digital transfer at SFU Archives. The **Procedures section** includes step-by-step instructions, with separate point-of-view procedures for producers ([SFU departmental staff and private donors](procedures/standard-producers/00-introduction.md)) and [archivists](procedures/standard-archives/00-introduction.md). The **Guide section** contains more general discussions of the Archives' approach to digital transfer. For **email transfer**, see the separate [email archiving guidelines](https://github.com/SFU-Archives/email-archiving) elsewhere on this GitHub site.
+This site provides documentation for digital transfer at SFU Archives. It includes step-by-step instructions, with separate point-of-view procedures for producers ([SFU departmental staff and private donors](procedures/standard-producers/00-introduction.md)) and for [archivists](procedures/standard-archives/00-introduction.md). The **Guide section** contains more general discussions of the Archives' approach to digital transfer. For **email transfer**, see the separate [email archiving guidelines](https://github.com/SFU-Archives/email-archiving) elsewhere on this GitHub site.
 
 Please note that the site is a work in progress and will be updated as new material is added.
 
@@ -23,7 +23,7 @@ Please note that the site is a work in progress and will be updated as new mater
 - [Procedures for Departmental Staff and Donors (Jan 2021)](downloads/procedures-producers-full.pdf)
 - [Procedures for Archives (Jan 2021)](downloads/procedures-archives-full.pdf)
 
-###### Last updated: Jan 22, 2021
+###### Last updated: Jan 28, 2021
 
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 

@@ -1,5 +1,5 @@
 ###### [Digital Transfer](../../README.md) > [Standard Transfer: Procedures for Archives](00-introduction.md)
-###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation](03-validation.md) `|` 4. Ingest `|` [5. Completion](05-completion.md)
+###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation](03-validation.md) `|` 4. Ingest `|` [5. Completion](05-completion.md) `|` [Appendices](../appendices/overview.md)
 
 # 4. Ingest
 <img align="right" width="350" src="../../screenshots/04-ingest.png">
@@ -18,13 +18,13 @@ This phase begins after you have added validation metadata to the transfer packa
 <br clear="all"/>
 
 ## 4.1 Upload transfer package to staging server
-Upload the validated transfer package to the Archives' `pine` VM at `/var/transfersoure`. This directory can be accessed by Archivematica for ingest.
+Upload the validated transfer package to the Archives' `pine` VM at `/var/transfersoure`. This directory is accessed by Archivematica for ingest.
 
-You can upload the package by various methods, but **must be able to preserve the original timestamps of the files**, i.e. timestamps must not be overwritten with the date / time of copying.
-- The most reliable method to ensure this is the command-line utility [rsync](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/rsync.md), described below.
+You can upload the package by various methods, but whatever you choose **must be able to preserve the original timestamps of the files**, i.e. timestamps must not be overwritten with the date / time of copying.
+- The most reliable method is the command-line utility [rsync](https://github.com/SFU-Archives/digital-repository-utilities/blob/master/utilities/rsync.md), described below.
 - You can, however, use an FTP client if you can set its preferences to preserve timestamps.
 - In Cyberduck, for example, go to **Preferences > Transfers > Timestamps > Uploads**; check `Preserve modification dates`.
-- You can also specify that Cyberduck verifies checksums on upload, though it is not clear that this in fact happens.
+- You can also set Cyberduck's options to verify checksums on upload, though it is not clear that this in fact happens.
 
 By whatever method, you must have permissions to access the Archives' VMs, i.e. your email address must already be included on the mail-list that controls access.
 - Consult with RD to be added to the access list.
@@ -33,18 +33,19 @@ By whatever method, you must have permissions to access the Archives' VMs, i.e. 
 To run rsync via command line in Terminal:
 
 ```
-$ rsync -vhrlt --progress <<file_path_to_package>> <<user>>@pine.archives.sfu.ca:/var/transfersource`.
+$ rsync -vhrlt --progress --checksum <<file_path_to_package>> <<user>>@pine.archives.sfu.ca:/var/transfersource` | tee ~/Desktop/rsync/copylist.txt
 ```
 
 Note that you will be prompted to enter your SFU computing password.
 
 Flags:
-- -v = verbose.
-- -h = human-readable output.
-- -r = recursive (copies all sub-folders and their contents).
-- -l = symlinks.
-- -t = timestamps.
-- --progress (shows progress in Terminal window).
+- -v = verbose: increases the amount of information shown about the transfer.
+- -h = human-readable: outputs number in human-readable format.
+- -r = recursive: copies all sub-folders and their contents.
+- -l = symlinks: copies symlinks.
+- -t = timestamps: preserves modification dates.
+- --progress: shows progress in Terminal window).
+- --checksum: generates checksums.
 
 After copying is complete, connect to `pine` via Cyberduck to confirm that upload was successful and timestamps preserved.
 
@@ -57,8 +58,8 @@ Log on to Archivematica and ingest the transfer package to backlog.
 
 On the Archivematica **Transfer** tab:
 - Select `Transfer type` = "Unzipped bag".
-- Enter the `Transfer name` using the naming convention `ACNYYYY-NNN_Creator_Descriptor`, e.g. "ACN2021-100_SFUGeography_CommitteeFiles".
-- The `Transfer name` should be the same as the name of the validated transfer package created in [step 3.7](03-validation.md#37-edit-the-transfer-package)) above).
+- Enter the `Transfer name` using the naming convention `ACN<<AccessionNumber>>_Creator_Descriptor`, e.g. "ACN2021-100_SFUGeography_CommitteeFiles".
+- The `Transfer name` should be the same as the name of the validated transfer package created in [step 3.7](03-validation.md#37-edit-the-transfer-package) above.
 - Enter the `Accession number` without the "ACN" prefix, e.g. "2021-100".
 - Leave `Access system ID` blank.
 - Check `Automatically approve`.
@@ -81,7 +82,7 @@ Archivematica will sometimes encounter errors (and throw error messages) during 
 ## 4.3 Import Bag data to AIS Accession record
 <img align="right" width="400" src="../../screenshots/04-import-confirm.png">
 
-AIS scripts can import data from transfer's `bag-info.txt` file to populate the AIS Accession record that you created previously when generating an `Accession number` in [step 2.2](02-transfer.md#22-create-an-accession-record).
+AIS scripts can import data from transfer's `bag-info.txt` file to populate the AIS Accession record that you created previously ([step 2.2](02-transfer.md#22-create-an-accession-record)).
 
 Before importing the bag data, make sure that a fonds and authority record for the creator already exist in the AIS.
 
@@ -105,14 +106,14 @@ The AIS imports the bag data and routes you to a **Data Entry** screen to review
 
 All fields that have a red arrow next to them should be completed; the rest are optional.
 - Other optional note fields can be accessed by links (e.g. `+ Add note on provenance`).
-- See the [AIS documentation site](https://github.com/SFU-Archives/ais-database) for guidance on all fields in AIS Accession records (forthcoming); the following notes highlight specifics relevant to the accessioning of digital transfers.
+- See the [AIS documentation site](https://github.com/SFU-Archives/ais-database) for guidance on all fields in AIS [Accession records](https://github.com/SFU-Archives/ais-database/blob/main/modules/archives/accession/overview.md); the following notes highlight specifics relevant to the accessioning of digital transfers.
 
 ### Transfer tab
 Update the default `Accession title` ("SFU MoveIt transfer") with something more descriptive.
 - To use the transfer name supplied by the contact (displayed immediately above), click the `Use bag data` button.
 
 The shaded `Records creator` field shows the value that was supplied by the contact in the bag.
-- Link the accession to the `Creator's AIS authority record` by selecting their name from the drop-down list.
+- Link the accession to the `Creator's AIS authority record` by selecting the name from the drop-down list.
 - Link the accession to the creator's AIS fonds record by selecting / entering the `Fonds reference code`.
 - The authority and fonds records must already exist; if you need to create them, click the `Cancel` button, create the records, then re-run the bag import script.
 
@@ -131,14 +132,14 @@ The `Date range` fields default to values based on the information submitted wit
 The `Physical description` field defaults to the `Bag size` calculated from the actual size of the transfer.
 
 ### Scope and content tab
-The `AIS scope and content` field combines the descriptive information supplied by the contact in the bag (`Producer's description`) and that added by the archivist during validation (`Archivist's description`).
+The AIS `scope and content` field combines the descriptive information supplied by the contact in the bag (`Producer's description`) and that added by the archivist during validation (`Archivist's description`).
 - Edit as required for the Accession record.
 
 ### Management tab
 Flag any known privacy, copyright, or long-term preservation issues. This tab also contains the `General note` field for information relating to the transfer that does not fit into a more specific field.
 
 ### Dates tab
-These fields record dates of events in the workflow: packaging and transfer (by the contact), and validation and ingest (by the archivist).
+These fields record dates of events in the workflow: packaging and transfer (by the contact), validation and ingest (by the archivist).
 - These dates will later appear in the Accession record on the **Workflow** tab (**Key dates** and **Other events** subtabs).
 - The `Packaged date` is generated by SFU MoveIt on package creation.
 - To set the `Transfer date` to the `Packaged date` click the `Use same` button; or enter it manually if these are known to be different.
@@ -155,18 +156,14 @@ Assuming you have already ingested the transfer to Archivematica backlog ([step 
 Click the `Submit` button to complete data entry.
 - A popup notice tells you the process is completed and takes you to the full Accession record.
 
-<br clear="all"/>
-
 ## 4.4 Output AIS forms and notices
 <img align="right" width="400" src="../../screenshots/04-forms-notices.png">
 
 As part of the completion process triggered by the `Submit` button, the AIS outputs a number of files to a folder on your desktop `~/Desktop/DigitalTransfer/<<AccessionNumber>>`.
 
 These files are:
-- The pdf `Accession Record Form` for the collection file (`_AccessionForm_Full.pdf`) and the **Unprocessed Holdings** tab of the hardcopy finding aid (`_AccessionForm_Public.pdf`).
-- The `Digital Transfer Completed Notice` (pdf) and email template text (txt file) to be sent to the contact (see [step 5 below](05-completion.md)).
+- Two pdf **Accession Record Forms** for the collection file (`_AccessionForm_Full.pdf`) and the **Unprocessed Holdings** tab of the hardcopy finding aid (`_AccessionForm_Public.pdf`).
+- A pdf form (`_DigitalTransferNotice.pdf`) and email template text (`_EmailTemplate.txt` file) to be sent to the contact (see [step 5 below](05-completion.md)).
 
-<br clear="all"/>
-
-###### Last updated: Jan 14, 2021
+###### Last updated: Jan 28, 2021
 ###### [< Previous: 3. Validation](03-validation.md) `|` [Next: 5. Completion >](05-completion.md)
