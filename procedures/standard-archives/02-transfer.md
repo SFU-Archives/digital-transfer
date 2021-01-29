@@ -27,7 +27,7 @@ For instructions, see SFU Mail documentation on [adding shares](https://www.sfu.
 <img align="right" width="400" src="../../screenshots/02-create-accession.png">
 
 Create an AIS **Accession record** for the transfer.
-- Each deposit should be registered as a separate accession, with its own unique `Accession number` in the form YYYY-NNN (e.g. "2021-005").
+- Each deposit should be registered as a separate accession, with its own unique **Accession number** in the form `YYYY-NNN` (e.g. "2021-005").
 - Even if the transfer is eventually rejected during [validation](03-validation.md), the Accession record provides a place to document the decision.
 
 To create a new Accession record:
@@ -36,11 +36,11 @@ To create a new Accession record:
 - Click the `Get new accession number` link.
 - The AIS creates a new accession, assigns it the next available number, gives it the provisional title "SFU MoveIt transfer", and copies the accession number to your clipboard.
 
-Make a note of the `Accession number`, as you will need it later during [step 3, Validation](03-validation.md).
+Make a note of the Accession number, as you will need it later during [step 3, Validation](03-validation.md).
 
 ## 2.3 Download the transfer package
 Download a copy of the transfer package from SFU Vault to your desktop for validation and analysis.
 - It is possible to open and inspect the contents on SFU Vault, but the various software tools used in the [Validation phase](03-validation.md) cannot be run directly in Vault.
 
-###### Last updated: Jan 28, 2021
+###### Last updated: Jan 29, 2021
 ###### [< Previous: 1. Pre-Transfer](01-pre-transfer.md) `|` [Next: 3. Validation >](03-validation.md)
