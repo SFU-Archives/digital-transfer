@@ -122,7 +122,7 @@ The shaded `Records creator` field shows the value that was supplied by the cont
 - The authority and fonds records must already exist; if you need to create them, click the `Cancel` button, create the records, then re-run the Bag import script.
 
 ### Contact tab
-<img align="right" width="400" src="../../screenshots/04-contact-tab.png">
+<img align="right" width="400" src="../../screenshots/04-import-contact.png">
 
 The contact's information as supplied through MoveIt is displayed in the shaded fields.
 - Link the accession to an existing contact by selecting their name from drop-down list in the `Contact's AIS authority ID` field.
