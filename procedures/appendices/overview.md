@@ -8,8 +8,10 @@ Transfer procedures are described in separate, point-of-view documents for [SFU 
 - [Appendix A. Transfer Metadata](a-transfer-metadata.md)
 - [Appendix B. Anatomy of the Transfer Package](b-anatomy-transfer-package.md)
 - [Appendix C. Post-transfer](c-post-transfer.md)
+- [Appendix D. Digital Transfer Checklist (pdf)](../../downloads/checklist-transfer.pdf)
+- [Appendix E. Transfer Validation Checklist (pdf)](../../downloads/checklist-validation.pdf)
 
 **Download**
 - Download the appendices as a [single pdf](../../downloads/procedures-archives.pdf) (snapshot created Jan 28, 2021).
 
-###### Last updated: Jan 28, 2021
+###### Last updated: Feb 1, 2021
