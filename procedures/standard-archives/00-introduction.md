@@ -2,7 +2,7 @@
 ###### [1. Pre-Transfer](01-pre-transfer.md) `|` [2. Transfer](02-transfer.md) `|` [3. Validation](03-validation.md) `|` [4. Ingest](04-ingest.md) `|` [5. Completion](05-completion.md) `|` [Appendices](../appendices/overview.md)
 
 # Standard Transfer: Procedures for Archives
-SFU Archives' standard method for digital transfer provides for the creation and deposit of standardized transfer packages that implement the [BagIt File Packaging Format](https://tools.ietf.org/html/rfc8493). These procedures describe the process from the point of view of Archives' staff. In the workflow diagram below, actions and decision points by Archives are shaded blue.
+SFU Archives' standard method for digital transfer supports the creation and deposit of standardized transfer packages that implement the [BagIt File Packaging Format](https://tools.ietf.org/html/rfc8493). These procedures describe the process from the point of view of Archives' staff. In the workflow diagram below, actions and decision points by Archives are shaded blue.
 
 For the same process from the producer's point of view, see [Standard Transfer Method: Procedures for SFU Staff and Private Donors](../standard-producers/00-introduction.md).
 
@@ -48,5 +48,5 @@ For the same process from the producer's point of view, see [Standard Transfer M
 **Download**
 - Download the full procedures as a [single pdf](../../downloads/procedures-archives.pdf) (snapshot created Jan 28, 2021).
 
-###### Last updated: Jan 28, 2021
+###### Last updated: Jan 29, 2021
 ###### [Next: 1. Pre-transfer >](01-pre-transfer.md)

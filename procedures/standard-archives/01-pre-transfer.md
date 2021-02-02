@@ -4,13 +4,12 @@
 # 1. Pre-Transfer
 <img align="right" width="350" src="../../screenshots/01-pre-transfer.png">
 
-The pre-transfer phase is typically triggered by the first request from a producer (SFU departmental staff or a private donor) to send digital materials to the Archives. [Determine whether or not to accept the request](#11-accept-or-reject-a-request-to-transfer). If accepted, [create a deposit folder](#12-create-a-deposit-folder) on SFU Vault. If the producer will be regularly sending new transfers in the future, you should create a [Digital Transfer Account](#13-create-a-digital-transfer-account) for the person. Once individuals have accounts, they do not need to request permission for subsequent transfers, and the transfer process more resembles a self-deposit system.
+The pre-transfer phase is typically triggered by the first request from a producer (SFU departmental staff or a private donor) to send digital materials to the Archives. [Determine whether or not to accept the request](#11-accept-or-reject-a-request-to-transfer). If accepted, [create a deposit folder](#12-create-a-deposit-folder) on SFU Vault. If the producer will be regularly sending new transfers in the future, you can create a [Digital Transfer Account](#13-create-a-digital-transfer-account) for the person. With an account, individuals have ongoing access to a deposit folder, they do not need to request permission for subsequent transfers, and the transfer process more resembles a self-deposit system.
 
 ## Steps
 - [1.1 Accept or reject a request to transfer](#11-accept-or-reject-a-request-to-transfer)
   - [University records](#university-records)
   - [Private records](#private-records)
-  - [Checklist](#checklist)
 - [1.2 Create a deposit folder](#12-create-a-deposit-folder)
   - [Guidelines](#guidelines)
   - [Shares](#shares)
@@ -24,7 +23,7 @@ Any university department or body can transfer digital records to the Archives. 
 
 - The person has the authority to transfer records on behalf of their unit.
 
-- The records are covered by a [Records Retention Schedule and Disposal Authority](http://www.sfu.ca/archives2/dur/rrsdas.html) (RRSDA) whose `Final disposition` = "Archival".
+- The records are covered by a [Records Retention Schedule and Disposal Authority](http://www.sfu.ca/archives2/dur/rrsdas.html) (RRSDA) whose **final disposition** = "Archival".
 
 - The unit is the **Office of Primary Responsibility** (OPR) for the records.
 
@@ -47,11 +46,8 @@ The following conditions should be met before accepting a proposed transfer:
 
 It is common and acceptable for donors to send materials before the Donation Agreement is finalized (e.g. so an archivist can better assess the proposed donation).
 
-### Checklist
-See the [Transfer Validation Checklist](../../downloads/checklist-validation.pdf) for more on the validation process.
-
 ## 1.2 Create a deposit folder
-Under the standard transfer method, the producer will upload their transfer to a **deposit folder** on SFU Vault, the university's file-sharing and storage service. **Deposit folders should only be created on the Vault space associated with the Archives' moveit email account.**
+Under the standard transfer method, the producer will upload their transfer to a **deposit folder** on [SFU Vault](https://www.sfu.ca/itservices/collaboration/sfu-vault.html), the university's file-sharing and storage service. **Deposit folders should only be created on the Vault space associated with the Archives' moveit email account.**
 
 ### Guidelines
 Create separate deposit folders for each fonds (1 fonds = 1 folder).
@@ -71,9 +67,9 @@ To provide the producer with access to the deposit folder, you can either (i) cr
 
 - When you share the folder (method i) with an SFU community member and that person has installed the [desktop client version of SFU Vault](http://www.sfu.ca/download-sfuvault/), they will be able to view and interact with the deposit folder directly on their computer via Finder (Mac) or File Explorer (Windows).
 
-- External depositors and SFU members who have not installed the desktop version of Vault will access the deposit folder through a web browser. If you shared the link (method ii), it will take them directly to the deposit folder. If you shared the folder itself (method i), they must log in with their SFU credentials at https://vault.sfu.ca and navigate to the deposit folder (e.g click the sidebar link `Shared with you`).
+- External depositors and SFU members who have not installed the desktop version of Vault will access the deposit folder through a web browser. If you shared the link (method ii), it will take them directly to the deposit folder. If you shared the folder itself (method i), they can log in with their SFU credentials at https://vault.sfu.ca and navigate to the deposit folder (e.g click the sidebar link `Shared with you`).
 
-- By either share method, you will need to allow the depositor to have `create` privileges so that they can upload their transfer.
+- By either share method, you need to allow the depositor to have **create** privileges so that they can upload their transfer.
 
 - For more on accessing the deposit folder from the depositor's point of view, see the [procedures for producers, section 2. Transfer](../standard-producers/02-transfer.md).
 
@@ -82,9 +78,9 @@ To provide the producer with access to the deposit folder, you can either (i) cr
 For one-off transfers, the deposit folder can be deleted or the share removed after the transfer has been completed. But if the same person will be making additional transfers in the future, you can leave the deposit folder and its share in place and create a **Digital Transfer Account** for the person.
 
 ### Who should have an account?
-Having a Digital Transfer Account means that a person is recognized as an authorized depositor on behalf of a fonds creator and may make transfers (deposits) without requiring preliminary permission from the Archives.
+Having a **Digital Transfer Account** means that a person is recognized as an authorized depositor on behalf of a fonds creator and may make transfers (deposits) without requiring preliminary permission from the Archives.
 
-- Ideally, each university department or private donor organization that is regularly transferring digital records to the Archives should have a designated contact person who holds an account.
+- Ideally, each university department or private donor organization that regularly transfers digital records to the Archives should have a designated contact person who holds an account.
 
 - There is no limit to the number of accounts per department or organization, but it is preferable to limit their number in order to centralize the transfer process for a given unit. This avoids duplication of effort, reduces the likelihood that the same materials will be sent by different people, and facilitates communication relating to transfers, holdings, retrievals, and changes to tools and processes.
 
@@ -94,7 +90,7 @@ To create an account:
 
 - Register the account in the AIS database: open the **Repository module > Home > Digital Transfer Accounts** screen, click the `+ New account` button, and enter the person's data.
 
-- For more information on data entry and management of account record in the AIS database, see the separate section on this GitHub site for AIS documentation.
+- For more information on data entry and management of account records, see the [Digital Transfer Account](https://github.com/SFU-Archives/ais-database/blob/main/modules/repository/digital-transfer-account/description.md) page on the [AIS documentation](https://github.com/SFU-Archives/ais-database) site.
 
-###### Last updated: Jan 28, 2021
+###### Last updated: Jan 29, 2021
 ###### [< Previous: Introduction](00-introduction.md) `|` [Next: 2. Transfer >](02-transfer.md)
