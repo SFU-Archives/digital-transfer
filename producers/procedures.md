@@ -1,5 +1,5 @@
 # Procedures for Producers
-<img align="right" width="350" src="../screenshots/pov-producers.png">
+<img align="right" width="400" src="../images/pov-producers.png">
 
 1. Contact the Archives to request to transfer digital records to the Archives.
 * What can I transfer
