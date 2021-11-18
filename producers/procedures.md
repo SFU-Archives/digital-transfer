@@ -1,16 +1,16 @@
 # Procedures for Producers with FAQs
-<img align="right" width="400" src="../images/pov-producers.png">
+<img align="right" width="350" src="../images/pov-producers1.png">
 
 This page is intended for producers of digital records – SFU staff and non-SFU donors – who want to transfer their digital materials to SFU Archives. It outlines 8 steps and provides answers to frequently asked questions relating to each step.
 
-## 1. Contact the Archives to request to transfer digital records to the Archives
+### 1. Contact the Archives to request to transfer digital records to the Archives
 Not all digital records need or should be send to the Archives. An archivist will discuss with you the records you want transfer.  If you will be regularly making transfers, the archivist will create an on-going **digital transfer account** for you so that you can skip this step in the future.
 - [What can I transfer](faq1-request.md#what-can-i-transfer)
 - [Who should I contact?](faq1-request.md#who-should-i-contact)
 - [Why might the Archives reject my request?](faq1-request.md#what-might-archives-reject-my-request)
 - [Who should get a digital transfer account?][faq1-request.md#who-should-get-a-digital-transfer-account]
 
-## 2. Receive a link to a deposit folder on SFU Vault
+### 2. Receive a link to a deposit folder on SFU Vault
 When the Archives accepts your request, an archivist will create a **deposit folder** for you on SFU Vault. If you have a  **digital transfer account** you will have  on-going access to the folder. For one-time transfers, your access will be time-limited.
 - [What is SFU Vault/](faq2-deposit-folder.md#what-is-sfu-vault)
 - [How do I access my deposit folder?(faq2-deposit-folder.md#how-do-i-access-my-deposit-folder)
