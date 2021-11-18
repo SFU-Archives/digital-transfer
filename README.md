@@ -2,7 +2,7 @@
 This site provides documentation for digital transfer at SFU Archives. For **email transfer**, see the separate repository for [email archiving](https://github.com/SFU-Archives/email-archiving) elsewhere on this GitHub site.
 
 ## For SFU staff and donors (producers)
-- [Transfer Procedures for Producers with FAQs](producers/proceedures.md)
+- [Transfer Procedures for Producers with FAQs](producers/procedures.md)
 - [Transfer Checklist (pdf)](downloads/checklist-transfer.pdf)
 - [SFU MoveIt Fields](producers/sfu-moveit-fields.md)
 
