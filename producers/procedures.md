@@ -5,45 +5,51 @@ This page is intended for **producers** of digital records – SFU staff and non
 
 ### 1. Contact the Archives to request to transfer digital records to the Archives
 Not all digital records need or should be send to the Archives. An archivist will discuss with you the records you want transfer.  If you will be regularly making transfers, the archivist will create an on-going **digital transfer account** for you so that you can skip this step in the future.
-- [What can I transfer](faq1-what-can-i-transfer)
-- [Who should I contact?](faq1-who-should-i-contact)
-- [Why might the Archives reject my request?](faq1-why-might-archives-reject-my-request)
-- [Who should get a digital transfer account?](faq1-who-should-get-a-digital-transfer-account)
+- [What can I transfer](faq1-transfer.md)
+- [Who should I contact?](faq1-contact.md)
+- [Why might the Archives reject my request?](faq1-request.md)
+- [Who should get a digital transfer account?](faq1-account.md)
 
 ### 2. Receive a link to a deposit folder on SFU Vault
 When the Archives accepts your request, an archivist will create a **deposit folder** for you on SFU Vault. If you have a  **digital transfer account** you will have  on-going access to the folder. For one-time transfers, your access will be time-limited.
-- [What is SFU Vault/](faq2-what-is-sfu-vault)
-- [How do I access my deposit folder?](faq2-how-do-i-access-my-deposit-folder)
+- [What is SFU Vault/](faq2-sfu-vault.md)
+- [How do I access my deposit folder?](faq2-deposit-folder.md)
 
 ### 3. Download SFU MoveIt, the Archives' packaging tool.
 **SFU MoveIt** is the Archives' packaging tool that creates standardized **transfer packages**. [Read more about it here](https://www.sfu.ca/archives/digital-preservation/sfu-moveit.html) and [download the latest version here](https://github.com/axfelix/moveit-electron) (`.exe` file = Windows version; `.dmg` file = Mac OS version).
-- [Why do I need a packaging tool?](faq3-why-do-i-need-a-packaging-tool)
-- [How do I install SFU MoveIt?](faq3-how-do-i-install-sfu-moveit)
-- [How do I uninstall SFU MoveIt?](faq3-how-do-i-uninstall-sfu-moveit)
-- [How do I know when an upgrade is available?](faq3-how-do-i-know-when-an-upgrade-is-available)
+- [Why do I need a packaging tool?](faq3-packaging-tool.md)
+- [How do I install SFU MoveIt?](faq3-install-sfu-moveit.md)
+- [How do I uninstall SFU MoveIt?](faq3-uninstall-sfu-moveit.md)
+- [How do I know when an upgrade is available?](faq3-upgrade-sfu-moveit.md)
 
 ### 4. Gather records for transfer into a transfer folder
 Create a **transfer folder** on your local machine and move here all the folders and files you will include in the transfer. This step segregates the material for transfer from other records that will remain in your active system: this will facilitate their eventual deletion at the end of the transfer process. Try to document the original directory structure and preserve files' original timestamps.
-- [How do I document the original directory structure?](faq4-how-do-i-document-the-original-folder-structure)
-- [What are timestamps and how do I preserve them?](faq4-what-are-timestamps-and-how-do-i-preserve-them)
-- [Can I include password-protected or encrypted files?](faq4-can-i-include-password-protected-or-encrytped-files)
-- [How do I transfer records from a database or content managemeent system?](faq4-how-do-i-transfer-records-from-a-database-or-content-management-system)
+- [How do I document the original directory structure?](faq4-directory-structure.md)
+- [What are timestamps and how do I preserve them?](faq4-timestamps.md)
+- [Can I include password-protected or encrypted files?](faq4-encryption.md)
+- [How do I transfer records from a database or content managemeent system?](faq4-databases.md)
 
 ###  5. Use SFU MoveIt to create a transfer package
 Use **SFU MoveIt** to convert your **transfer folder** into a standardized **transfer package** (a "bag") that follows the [BagIt File Packaging Format](https://datatracker.ietf.org/doc/html/rfc8493) specification. MoveIt also requires you to enter some minimal information about the transfer (e.g. your contact email and a brief description of the records).
-- [How many transfer packages (bags) should I create?](faq5-how-many-transfer-packages-bags-should-i-create)
 - [How do I use SFU MoveIt?](guide-to-sfu-moveit.md)
+- [How many transfer packages (bags) should I create?](faq5-how-many-transfer-packages.md)
 - [What is a BagIt bag?](faq5-what-is-bag.md)
 
 ### 6. Upload the transfer package to your deposit folder on SFU Vault
-Access the **deposit folder** link you received in step 2
-* Are there size limits on transfer packages?
-* Is there an alternative transfer method?
+Access the **deposit folder** link you received in step 2 and upload the **transfer package(s)** you created in step 5. The Archives will receive an automated notice of the deposit. You should receive a **Notice of receipt** from the Archives within 1 business day.
+- [Are there size limits on uploads to Vault?](faq6-size-limits.md)
+- [Why didn't I receive a Notice of receipt?](faq6-wnotice-of-receipt.md)
+- [Is there an alternative transfer method?](faq6-alternative-tranfer-method.md)
 
-7. Receive the Transfer Completed Notice when the Archives has processed your transfer.
-* What does "processing" involve?
-* Do I need to keep the Transfer Completed Notice?
+### 7. Receive the Transfer Completed Notice when the Archives has processed your transfer
+When the an archivist has finished processing your transfer, you will receive a **Transfer completed notice**. It includes the transfer **Accession number** and a **Transfer list** showing all the folders or files that you transferred.
+- [What does "processing" involve?](faq7-processing.md)
+- [Do I need to keep the Transfer completed notice?](faq7-keep-notice)
 
-8. Delete the records from your active system.
-* Can I keep my own copy of the records I transferred?
-* How do I request a copy of a transferred record if I need it later?
+### 8. Delete the records from your active system.
+The records have now passed into the custody and control of the Archives and can be deleted from your active system. Deletion ensures that you will not unintentionally re-transfer the same records at a later date. For university records, it also ensures that your department is in compliance with the applicable records retention schedule (RRSDA) and that you minimize the risk of unauthorized access, use or disclosure of any personal or confidential information contained in the records.
+- [What should I delete?](faq8-delete.md)
+- [Can I keep my own copy of the records I transferred?](faq8-keep-copies.md)
+- [How do I request a copy of a transferred record if I need it later?](faq8-retreivals.md)
+
+###### Last updated: Nov 18, 2021
