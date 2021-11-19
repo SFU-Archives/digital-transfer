@@ -8,13 +8,13 @@ University records are the official records of the university and its governing 
 
 Contact:
 - Archives' reference desk (archives-at-sfu.ca); or
-- Records Management Archivist: Shamin Malmas (malmas-at-sfu.ca).
+- Records Management Archivist: Shamin Malmas (shamin_malmas-at-sfu.ca).
 
 ### Non-SFU records
 Non-SFU records ("private records") include **personal archives** (e.g. faculty donations), and the records of **campus community** or **non-SFU** organizations.
 
 Contact:
 - Archives' reference desk (archives-at-sfu.ca); or
-- Acquisitions and Outreach Archivist: Melanie Hardbattle (hardbat-at-sfu.ca).
+- Acquisitions and Outreach Archivist: Melanie Hardbattle (mhardbat-at-sfu.ca).
 
 ###### Last updated: Nov 18, 2021

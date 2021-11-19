@@ -1,7 +1,7 @@
 ###### [Digital Transfer](../README.md) `|` Procedures for Producers `|` [FAQs](faqs.md)
 
 # Transfer Procedures for Producers with FAQs
-<img align="right" width="300" src="../images/pov-producers1.png">
+<img align="right" width="300" src="../images/pov-producers.png">
 
 This page is intended for **producers** of digital records – SFU staff and non-SFU donors – who want to transfer their records to SFU Archives. It outlines the process and answers frequently asked questions relating to each step.
 
