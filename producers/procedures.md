@@ -1,4 +1,4 @@
-###### [Digital Transfer](../README.md) `|` Producers Procedures `|` [SFU MoveIt Users Guide](sfu-moveit-users-guide.md) `|` [FAQs](faqs.md)
+###### [Digital Transfer](../README.md) `|` Procedures for Producers `|` [FAQs](faqs.md)
 
 # Transfer Procedures for Producers with FAQs
 <img align="right" width="300" src="../images/pov-producers1.png">

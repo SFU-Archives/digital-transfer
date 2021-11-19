@@ -1,4 +1,4 @@
-###### [Digital Transfer](../../README.md) `|` [Producers Procedures](procedures.md) `|` [SFU MoveIt Users Guide](sfu-moveit-users-guide.md) `|` FAQs
+###### [Digital Transfer](../README.md) `|` [Procedures for Producers](procedures.md) `|` FAQs
 
 # Digital Transfer: Frequently Asked Questions
 
@@ -25,7 +25,7 @@
 - [How do I transfer records from a database or content management system?](faq4-databases.md)
 
 ## 5. Transfer  package
-- [How do I use SFU MoveIt?](guide-to-sfu-moveit.md)
+- [How do I use SFU MoveIt?](faq5-sfu-moveit.md)
 - [How many transfer packages (bags) should I create?](faq5-how-many-transfer-packages.md)
 - [What is a BagIt bag?](faq5-what-is-bag.md)
 
