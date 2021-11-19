@@ -1,4 +1,4 @@
-# Procedures for Producers with FAQs
+# Transfer Procedures for Producers with FAQs
 <img align="right" width="300" src="../images/pov-producers1.png">
 
 This page is intended for **producers** of digital records – SFU staff and non-SFU donors – who want to transfer their records to SFU Archives. It outlines 8 steps and provides answers to frequently asked questions relating to each step.
@@ -46,7 +46,7 @@ When the an archivist has finished processing your transfer, you will receive a 
 - [What does "processing" involve?](faq7-processing.md)
 - [Do I need to keep the Transfer completed notice?](faq7-keep-notice)
 
-### 8. Delete the records from your active system.
+### 8. Delete the records from your active system
 The records have now passed into the custody and control of the Archives and can be deleted from your active system. Deletion ensures that you will not unintentionally re-transfer the same records at a later date. For university records, it also ensures that your department is in compliance with the applicable records retention schedule (RRSDA) and that you minimize the risk of unauthorized access, use or disclosure of any personal or confidential information contained in the records.
 - [What should I delete?](faq8-delete.md)
 - [Can I keep my own copy of the records I transferred?](faq8-keep-copies.md)
