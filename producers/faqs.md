@@ -9,7 +9,7 @@
 - [Who should get a digital transfer account?](faq1-account.md)
 
 ## 2. Deposit folder
-- [What is SFU Vault/](faq2-sfu-vault.md)
+- [What is SFU Vault](faq2-sfu-vault.md)
 - [How do I access my deposit folder?](faq2-deposit-folder.md)
 
 ## 3. Packaging tool
