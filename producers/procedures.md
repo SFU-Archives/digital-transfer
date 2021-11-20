@@ -14,7 +14,7 @@ Not all digital records need or should be sent to Archives. An archivist will di
 
 ### 2. Receive a link to a deposit folder on SFU Vault
 When the Archives accepts your request, an archivist will create a **deposit folder** for you on SFU Vault. If you receive a **Digital transfer account** you will have  on-going access to the folder. For one-time transfers, your access will be time-limited.
-- [What is SFU Vault/](faq2-sfu-vault.md)
+- [What is SFU Vault?](faq2-sfu-vault.md)
 - [How do I access my deposit folder?](faq2-deposit-folder.md)
 
 ### 3. Download SFU MoveIt, the Archives' packaging tool
