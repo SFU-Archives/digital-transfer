@@ -18,11 +18,11 @@ When the Archives accepts your request, an archivist will create a **deposit fol
 - [How do I access my deposit folder?](faq2-deposit-folder.md)
 
 ### 3. Download SFU MoveIt, the Archives' packaging tool
-**SFU MoveIt** is the Archives' packaging tool that creates standardized **transfer packages**. Read more [about MoveIt here](https://www.sfu.ca/archives/digital-preservation/sfu-moveit.html) and download the [latest version here](https://github.com/axfelix/moveit-electron) (`.exe` file = Windows version; `.dmg` file = Mac OS version).
-- [Why do I need a packaging tool?](faq3-packaging-tool.md)
-- [How do I install SFU MoveIt?](faq3-install-sfu-moveit.md)
-- [How do I uninstall SFU MoveIt?](faq3-uninstall-sfu-moveit.md)
-- [How do I know when an upgrade is available?](faq3-upgrade-sfu-moveit.md)
+**SFU MoveIt** is the Archives' utility for creating standardized **transfer packages**. [Download the latest version here](https://github.com/axfelix/moveit-electron) (`.exe` file = Windows version; `.dmg` file = Mac OS version).
+- [What is SFU MoveIt and why do I need to use it?](faq3-sfu-moveit.md)
+- [How do I install SFU MoveIt?](faq3-sfu-moveit-install.md)
+- [How do I uninstall SFU MoveIt?](faq3-sfu-moveit-uninstall.md)
+- [How do I know when an upgrade is available?](faq3-sfu-moveit-upgrade.md)
 
 ### 4. Gather records for transfer into a transfer folder
 Create a **transfer folder** on your local machine and move here all the folders and files you will include in the transfer. This step segregates the material for transfer from other records that will remain in your active system: this will facilitate their eventual deletion at the end of the transfer process. Try to document the original directory structure and preserve files' original timestamps.
